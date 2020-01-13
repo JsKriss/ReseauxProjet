@@ -37,9 +37,9 @@ if(!empty($_POST['submitted'])) {
   if(empty($email) || filter_var($email,FILTER_VALIDATE_EMAIL) === false) {
     $errors['email'] = 'Veuillez renseigner un email valide';
   } else {
-    $sql = "SELECT id FROM users WHERE email = :mail";
+    $sql = "SELECT id FROM users WHERE email = :email";
     $query = $pdo->prepare($sql);
-    $query->bindValue(':mail',$email,PDO::PARAM_STR);
+    $query->bindValue(':email',$email,PDO::PARAM_STR);
     $query->execute();
     $verifemail = $query->fetch();
     if(!empty($verifemail)) {
