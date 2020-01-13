@@ -14,9 +14,9 @@
             <a href="#home" class="active">Home</a>
             <a href="#statistics">News</a>
             <a href="#inscription">Contact</a>
-            <a href="#connexion">About</a>
-            <a href="#connexion">About</a>
+            <a href="about.php">About</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
