@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title></title>
 </head>
 <body>
