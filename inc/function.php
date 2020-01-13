@@ -39,3 +39,35 @@ function emailValidation($err,$mail,$key)
     }
     return $err;
 }
+
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
+function is_logged()
+{
+    $roles = array('abonne','admin');
+
+    if(!empty($_SESSION['login'])) {
+        if(!empty($_SESSION['login']['id']) && is_numeric($_SESSION['login']['id'])) {
+            if(!empty($_SESSION['login']['pseudo'])) {
+                if(!empty($_SESSION['login']['role'])) {
+                    if(in_array($_SESSION['login']['role'],$roles)) {
+                        if(!empty($_SESSION['login']['ip'])) {
+                            if($_SESSION['login']['ip'] == $_SERVER['REMOTE_ADDR']) {
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return false;
+}
