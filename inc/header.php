@@ -7,7 +7,7 @@
     <title></title>
 </head>
 <body>
-<header>
+<header class="header">
     <nav class="topnav" id="myTopnav">
         <a href="#home" class="active">Home</a>
         <a href="#statistics">News</a>
@@ -18,11 +18,4 @@
             <i class="fa fa-bars"></i>
         </a>
     </nav>
-    <div class="imageback">
-        <img class="imageback" src="assets/img/fond-menu.jpg" alt="">
-        <div class="bloc">
-
-        </div>
-    </div>
 </header>
-
