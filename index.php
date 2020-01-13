@@ -1,10 +1,8 @@
-<?php include('inc/header.php') ?>
+<?php
+include('inc/pdo.php');
+include('inc/function.php');
 
-<div class="bloc">
-    <p>hfrfjfhjfh</p>
-</div>
-<div class="bloc">
-    <p>hfrfjfhjfh</p>
-</div>
+include('inc/header.php'); ?>
 
-<?php include('inc/footer.php') ?>
+
+<?php include('inc/footer.php'); ?>
