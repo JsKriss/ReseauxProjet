@@ -123,7 +123,7 @@ body {
 }
 .image{
     height: 500px;
-    background-image: url(../img/fond-menu.jpg);
+    background-image: url(../img/fond-menu2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -149,9 +149,9 @@ h3{
     padding: 15px;
 }
 .bloc{
-    height: 500px;
     width: 100%;
     background-color: white;
+    padding-top: 100px;
 }
 .bloc1{
     border:solid;
@@ -160,6 +160,14 @@ h3{
     margin-right: 3%;
     margin-left: 3%;
     float: left;
+    text-align: center;
+}
+.bloc3{
+    border:solid;
+    border-radius: 30px;
+    width: 27.333%;
+    margin-right: 36.3335%;
+    margin-left: 36.3335%;
     text-align: center;
 }
 .portrait{
