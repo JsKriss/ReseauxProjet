@@ -8,14 +8,16 @@
 </head>
 <body>
 <header class="header">
-    <nav class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#statistics">News</a>
-        <a href="#inscription">Contact</a>
-        <a href="#connexion">About</a>
-        <a href="#connexion">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
+    <div class="image">
+        <nav class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#statistics">News</a>
+            <a href="#inscription">Contact</a>
+            <a href="#connexion">About</a>
+            <a href="#connexion">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
 </header>
