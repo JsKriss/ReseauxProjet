@@ -3,7 +3,7 @@
 
     <div class="bloc">
         <div class="bloc3">
-            <img class="portrait" src="assets/img/.jpg" alt="">
+            <img class="portrait" src="assets/img/personnes.jpg" alt="">
             <div class="presentation">
                 <h2>Pierre</h2>
                 <h3>Responsable de Projet</h3>

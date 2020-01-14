@@ -11,7 +11,7 @@
 <header class="header">
     <div class="image">
         <nav class="topnav" id="myTopnav">
-            <a href="#home" class="active">Home</a>
+            <a href="#home" class="active"><img class="logo" src="assets/img/logo.png"></a>
             <a href="#statistics">News</a>
             <a href="#inscription">Contact</a>
             <a href="about.php">About</a>
