@@ -47,4 +47,6 @@
         </div>
     </div>
   </div>
+<div class="hex-image"></div>
+
 <?php include('inc/footer.php') ?>
