@@ -1,6 +1,13 @@
-<?php include('inc/header.php') ?>
-  <div class="bloc">
-    <div class="wrap">
+<?php
+include ('inc/pdo.php');
+include('inc/function.php');
+include('inc/header.php');
+
+session_start();
+?>
+<div class="wrap">
+
+    <div class="bloc">
         <div class="bloc3">
             <img class="portrait" src="assets/img/personnes.jpg" alt="">
             <div class="presentation">
@@ -46,5 +53,6 @@
             </div>
         </div>
     </div>
-  </div>
+
+</div>
 <?php include('inc/footer.php') ?>

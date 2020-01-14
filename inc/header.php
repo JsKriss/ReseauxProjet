@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
 <head>
     <meta charset="utf-8">
 
@@ -9,16 +9,22 @@
 </head>
 <body>
 <header class="header">
+
     <div class="image">
         <nav class="topnav" id="myTopnav">
-            <a href="#home" class="active"><img class="logo" src="assets/img/logo.png"></a>
-            <a href="#statistics">News</a>
-            <a href="#inscription">Contact</a>
-            <a href="about.php">About</a>
+            <a href="index.php" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <?php if (!is_logged()) { ?>
+            <a href="login.php">Connexion</a>
+            <a href="register.php">Inscription</a>
+            <?php } else { ?>
+            <a href="stats.php">Stat Me!</a>
+            <a href="deconnexion.php">Deconnexion</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-
                 <i class="fa fa-bars"></i>
             </a>
+            <?php } ?>
         </nav>
     </div>
 </header>
