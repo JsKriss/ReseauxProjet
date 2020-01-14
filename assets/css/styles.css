@@ -61,19 +61,31 @@ table {
 .clear {*zoom:1;}
 a{text-decoration:none;}
 
+header{
+    height: 650px;
+    background-image: url(../img/fond-menu.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 .wrap {
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
+
 }
 /* ------- Menu -------*/
 .topnav {
-    background-color: #333;
+    background-color: #001033;
     overflow: hidden;
     position: fixed;
     width: 100%;
-}
+    opacity: 0.7;
 
+}
+.logo{
+    image: url(../img/logo.png);
+    width: 40px;
+}
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
@@ -91,7 +103,6 @@ a{text-decoration:none;}
     color: black;
 }
 .topnav a.active {
-    background-color: #4CAF50;
     color: white;
 }
 
@@ -119,13 +130,7 @@ a{text-decoration:none;}
 }
 
 body {
-    height: 1300px;
-}
-.image{
-    height: 500px;
-    background-image: url(../img/fond-menu.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    height: 2200px;
 }
 .imageback {
     /* The image used */
@@ -149,9 +154,13 @@ h3{
     padding: 15px;
 }
 .bloc{
-    height: 500px;
     width: 100%;
     background-color: white;
+    padding-top: 100px;
+    background-image: url(../img/fond-menu.jpg);
+    background-size: 100%;
+
+    height: 1600px;
 }
 .bloc1{
     border:solid;
@@ -161,6 +170,17 @@ h3{
     margin-left: 3%;
     float: left;
     text-align: center;
+    color: #dddddd;
+}
+.bloc3{
+    border:solid;
+    border-radius: 30px;
+    width: 27.333%;
+    margin-right: 36.3335%;
+    margin-left: 36.3335%;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #dddddd;
 }
 .portrait{
     width:100%;
