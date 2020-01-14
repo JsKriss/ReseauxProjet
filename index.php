@@ -19,6 +19,13 @@ session_start();
                 </ul>
             </div>
         </div>
+        <div id="ex1" class="modal">
+            <p>Thanks for clicking. That felt good.</p>
+
+        </div>
+
+        <!-- Link to open the modal -->
+        <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
         <div class="bloc1">
             <img class="portrait" src="assets/img/personnes.jpg" alt="">
             <div class="presentation">
