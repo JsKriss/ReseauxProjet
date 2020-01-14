@@ -76,7 +76,7 @@ a{text-decoration:none;}
 }
 .logo{
     image: url(../img/logo.png);
-    width: 100%;
+    width: 40px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -95,7 +95,6 @@ a{text-decoration:none;}
     color: black;
 }
 .topnav a.active {
-    background-color: #4CAF50;
     color: white;
 }
 
@@ -126,8 +125,8 @@ body {
     height: 1300px;
 }
 .image{
-    height: 500px;
-    background-image: url(../img/fond-menu2.jpg);
+    height: 650px;
+    background-image: url(../img/fond-menu.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
