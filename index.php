@@ -13,8 +13,8 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="bloc">
+     </div>
+     <div class="bloc">
         <div class="bloc1">
             <img class="portrait" src="assets/img/personnes.jpg" alt="">
             <div class="presentation">
