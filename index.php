@@ -1,7 +1,6 @@
 <?php include('inc/header.php') ?>
-<div class="wrap">
-
-    <div class="bloc">
+  <div class="bloc">
+    <div class="wrap">
         <div class="bloc3">
             <img class="portrait" src="assets/img/personnes.jpg" alt="">
             <div class="presentation">
@@ -13,8 +12,6 @@
                 </ul>
             </div>
         </div>
-     </div>
-     <div class="bloc">
         <div class="bloc1">
             <img class="portrait" src="assets/img/personnes.jpg" alt="">
             <div class="presentation">
@@ -49,6 +46,5 @@
             </div>
         </div>
     </div>
-
-</div>
+  </div>
 <?php include('inc/footer.php') ?>
