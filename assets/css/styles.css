@@ -68,10 +68,11 @@ a{text-decoration:none;}
 }
 /* ------- Menu -------*/
 .topnav {
-    background-color: #333;
+    background-color: #001033;
     overflow: hidden;
     position: fixed;
     width: 100%;
+    opacity: 0.8;
 
 }
 .logo{
