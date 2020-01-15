@@ -2,8 +2,8 @@
 <html lang="fr" dir="ltr">
 <head>
     <meta charset="utf-8">
-
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/style.css" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
     <title></title>
