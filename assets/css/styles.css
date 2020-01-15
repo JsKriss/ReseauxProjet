@@ -195,44 +195,6 @@ h3{
     width: 100%;
     padding: 5px 10px;
 }
-
-
-.hex-image {
-    width: 340px;
-    height: 300px;
-    background: transparent url("http://recapnotes.com/wp-content/uploads/2017/07/lime-2133091_640.jpg") no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    margin: 50px auto; /* centering */
-    transform: rotate(0deg); /* need to rotation ? */
-}
-/* Left shape */
-.hex-image:before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    width: 0;
-    height: 3px;
-    border-right: 85px solid transparent;
-    border-bottom: 150px solid white;
-    border-top: 150px solid white;
-}
-/* Right shape */
-.hex-image:after {
-    content: "";
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    width: 0;
-    height: 3px;
-    border-left: 85px solid transparent;
-    border-bottom: 150px solid white;
-    border-top: 150px solid white;
-}
-
-=======
 .bloc3:hover{
 
     background: radial-gradient(
@@ -245,7 +207,7 @@ h3{
 .hexagone {
     position: relative;
 /* Pour rendre responsive mettre width à 100% */;
-width: 173.20508px;
+width: 346.41016px;
 visibility: hidden;
 overflow: hidden;
 -webkit-filter : drop-shadow(5px 5px 5px rgba(0,0,0,0.6));
@@ -286,4 +248,14 @@ background-color: #cccccc;
 -ms-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
 transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
 }
->>>>>>> origin/master
+.hexagone .hexagonecontent{
+overflow-y: auto;
+width: 100%;
+display: block;
+position: absolute;
+visibility: visible;
+bottom: 25%;
+top: 25%;
+left: 0;
+z-index: 3;
+}
