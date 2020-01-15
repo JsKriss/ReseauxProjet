@@ -13,5 +13,10 @@ $("#register").modal({
     clickClose: false,
     showClose: false
 });
+// modal connexion
+$("#connexion").modal({
+    fadeDuration: 250,
+    fadeDelay: 1.50 // Will fade in 750ms after the overlay finishes.
+});
 
 });

@@ -83,7 +83,7 @@ include('inc/header.php'); ?>
 
         <div id="register" class="module">
             <a href="index.php"><i class="fas fa-times-circle"></i></a>
-            <h1  class="register_titlte">Inscription</h1>
+            <h1 id="idh1"  class="register_titlte">Inscription</h1>
             <form class="form" action="register.php" method="post">
                 <div class="alert-error"></div>
                 <div class="register_container">
