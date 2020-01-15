@@ -9,6 +9,8 @@ $json = json_decode($fichier, true);
 
 require("inc/header.php"); ?>
 
+<canvas id="myChart" width="400" height="400"></canvas>
+
 <div class="wrap-tableau">
     <div class="container">
         <div class="wrap-tableau2">
@@ -28,6 +30,8 @@ require("inc/header.php"); ?>
                     </thead>
                     <tbody>
                     <?php
+                    $tcp = 0;
+                    $udp = 0;
                     $count = count($json);
                     //        if(is_logged()) {
                     for ($i = 0; $i < $count; $i++) {
@@ -56,10 +60,12 @@ require("inc/header.php"); ?>
                             echo '<td>UDP</td>';
                             echo '<td>' . $json[$i]['_source']['layers']['udp']['udp.srcport'] . '</td>';
                             echo '<td>' . $json[$i]['_source']['layers']['udp']['udp.dstport'] . '</td>';
+                            $udp++;
                         } else if (isset($row['tcp'])) {
                             echo '<td>TCP</td>';
                             echo '<td>' . $json[$i]['_source']['layers']['tcp']['tcp.srcport'] . '</td>';
                             echo '<td>' . $json[$i]['_source']['layers']['tcp']['tcp.dstport'] . '</td>';
+                            $tcp++;
                         } else {
                             echo '<td></td>';
                             echo '<td></td>';
@@ -78,6 +84,39 @@ require("inc/header.php"); ?>
         </div>
     </div>
 </div>
+
+
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['TCP', 'UDP'],
+            datasets: [{
+                label: 'Types de connexions',
+                data: [<?=$tcp?>, <?=$udp?>],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+</script>
 
 
 <?php require("inc/footer.php");
