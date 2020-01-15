@@ -12,76 +12,52 @@ session_start();
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
                         <img src="assets/img/personnes.jpg" alt="">
-                        <div class="presentation">
-                            <h2>Pierre</h2>
-                            <h3>Responsable de Projet</h3>
-                            <ul class="lang">
-                                <li class="material-icons">computer PHP</li>
-                                <li class="material-icons">computer JQUERY</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="#ex1" rel="modal:open">
+        <a href="#ex2" rel="modal:open">
             <div class="hexagone2">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
                         <img class="portrait" src="assets/img/personnes.jpg" alt="">
-                        <div class="presentation">
-                            <h2>Yann</h2>
-                            <h3>Développeur</h3>
-                            <ul class="lang">
-                                <li class="material-icons">computer PHP</li>
-                                <li class="material-icons">computer JQUERY</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="#ex1" rel="modal:open">
+        <a href="#ex3" rel="modal:open">
             <div class="hexagone2">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
                         <img class="portrait" src="assets/img/personnes.jpg" alt="">
-                        <div class="presentation">
-                            <h2>Christopher</h2>
-                            <h3>Développeur</h3>
-                            <ul class="lang">
-                                <li class="material-icons">computer HTML/CSS</li>
-                                <li class="material-icons">computer JQUERY</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
         </a>
-        <a href="#ex1" rel="modal:open">
+        <a href="#ex4" rel="modal:open">
             <div class="hexagone2">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
                         <img class="portrait" src="assets/img/personnes.jpg" alt="">
-                        <div class="presentation">
-                            <h2>Antonin</h2>
-                            <h3>Développeur</h3>
-                            <ul class="lang">
-                                <li class="material-icons">computer HTML/CSS</li>
-                                <li class="material-icons">computer JQUERY</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
         </a>
     </div>
-</div>
 
     <!-- Link to open the modal -->
-    <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
     <div id="ex1" class="modal">
-
+        <img class="portrait" src="assets/img/personnes.jpg" alt="">
+        <div class="presentation">
+            <h2>Pierre</h2>
+            <h3>Responsable de Projet</h3>
+            <ul class="lang">
+                <li class="material-icons">computer PHP</li>
+                <li class="material-icons">computer JQUERY</li>
+            </ul>
+        </div>
+    </div>
+    <div id="ex2" class="modal">
         <img class="portrait" src="assets/img/personnes.jpg" alt="">
         <div class="presentation">
             <h2>Yann</h2>
@@ -91,9 +67,33 @@ session_start();
                 <li class="material-icons">computer JQUERY</li>
             </ul>
         </div>
-
-
     </div>
+    <div id="ex3" class="modal">
+        <img class="portrait" src="assets/img/personnes.jpg" alt="">
+        <div class="presentation">
+            <h2>Christopher</h2>
+            <h3>Développeur</h3>
+            <ul class="lang">
+                <li class="material-icons">computer HTML/CSS</li>
+                <li class="material-icons">computer JQUERY</li>
+            </ul>
+        </div>
+    </div>
+    <div id="ex4" class="modal">
+        <img class="portrait" src="assets/img/personnes.jpg" alt="">
+        <div class="presentation">
+            <h2>Antonin</h2>
+            <h3>Développeur</h3>
+            <ul class="lang">
+                <li class="material-icons">computer HTML/CSS</li>
+                <li class="material-icons">computer JQUERY</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
 
 
 <?php include('inc/footer.php') ?>
