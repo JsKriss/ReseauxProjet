@@ -75,14 +75,14 @@ if (!empty($_POST['submited'])) {
     }
 
 } //fermeture
-// debug($_POST);
-// debug($errors);
+debug($_POST);
+debug($errors);
 
 
 include('inc/header.php'); ?>
 
-    <h1>Inscription</h1>
-
+    <h1 class="register_titlte">Inscription</h1>
+    <div class="body-content">
         <form class="" action="register.php" method="post">
             <div class="register_container">
             <label for="pseudo">Pseudo *</label>
