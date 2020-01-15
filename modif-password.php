@@ -36,7 +36,7 @@ if (!empty($_GET['token']) && !empty($_GET['email'])) {
                 // UPDATE
                 $hashPassword = password_hash($password1,PASSWORD_BCRYPT);
                 $token = generateRandomString(120);
-                $sql = "UPDATE users SET mdp = :password, token = :token WHERE email = :email";
+                $sql = "UPDATE users SET password = :password, token = :token WHERE email = :email";
                 $query = $pdo->prepare($sql);
                 $query->bindValue(':email',   $email,PDO::PARAM_STR);
                 $query->bindValue(':password',$hashPassword,PDO::PARAM_STR);
