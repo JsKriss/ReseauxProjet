@@ -80,7 +80,7 @@ if (!empty($_POST['submited'])) {
 include('inc/header.php'); ?>
 
 
-    <div class="body-content">
+
         <div id="register" class="module">
             <a href="index.php"><i class="fas fa-times-circle"></i></a>
             <h1  class="register_titlte">Inscription</h1>
@@ -114,10 +114,11 @@ include('inc/header.php'); ?>
 
                     <input type="submit" name="submited" value="Inscrivez-vous">
 
+                    <div><img class="img_register_modal" src="assets/img/logo.png"></div>
 
             </form>
         </div>
-    </div>
+
 
 
 <?php
