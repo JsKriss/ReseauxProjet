@@ -75,45 +75,48 @@ if (!empty($_POST['submited'])) {
     }
 
 } //fermeture
-debug($_POST);
-debug($errors);
 
 
 include('inc/header.php'); ?>
 
-    <h1 class="register_titlte">Inscription</h1>
+
     <div class="body-content">
-        <form class="" action="register.php" method="post">
-            <div class="register_container">
-            <label for="pseudo">Pseudo *</label>
-            <input type="text" name="pseudo" id="pseudo" value="<?php if (!empty($_POST['pseudo'])) {
-                echo $_POST['pseudo'];
-            } ?>">
-            <p class="error"><?php if (!empty($errors['pseudo'])) {
-                    echo $errors['pseudo'];
-                } ?></p>
+        <div class="module">
+            <h1  class="register_titlte">Inscription</h1>
+            <form class="form" action="register.php" method="post">
+                <div class="alert-error"></div>
+                <div class="register_container">
+                    <label for="pseudo">Pseudo *</label>
+                    <input type="text" name="pseudo" id="pseudo" value="<?php if (!empty($_POST['pseudo'])) {
+                        echo $_POST['pseudo'];
+                    } ?>">
+                    <p class="error"><?php if (!empty($errors['pseudo'])) {
+                            echo $errors['pseudo'];
+                        } ?></p>
 
-            <label for="email">Email *</label>
-            <input type="email" name="email" id="email" value="<?php if (!empty($_POST['email'])) {
-                echo $_POST['email'];
-            } ?>">
-            <p class="error"><?php if (!empty($errors['email'])) {
-                    echo $errors['email'];
-                } ?></p>
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" value="<?php if (!empty($_POST['email'])) {
+                        echo $_POST['email'];
+                    } ?>">
+                    <p class="error"><?php if (!empty($errors['email'])) {
+                            echo $errors['email'];
+                        } ?></p>
 
-            <label for="password1">Mot de passe *</label>
-            <input type="password" name="password1" id="password1" value="">
-            <p class="error"><?php if (!empty($errors['password'])) {
-                    echo $errors['password'];
-                } ?></p>
+                    <label for="password1">Mot de passe *</label>
+                    <input type="password" name="password1" id="password1" value="">
+                    <p class="error"><?php if (!empty($errors['password'])) {
+                            echo $errors['password'];
+                        } ?></p>
 
-            <label for="password2">Confirmez votre mot de passe *</label>
-            <input type="password" name="password2" id="password2" value="">
+                    <label for="password2">Confirmez votre mot de passe *</label>
+                    <input type="password" name="password2" id="password2" value="">
 
-            <input type="submit" name="submited" value="Inscrivez-vous">
-            </div>
+                    <input type="submit" name="submited" value="Inscrivez-vous">
 
-        </form>
+
+            </form>
+        </div>
+    </div>
 
 
 <?php

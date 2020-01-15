@@ -61,16 +61,16 @@ table {
 .clear {*zoom:1;}
 a{text-decoration:none;}
 
-
-*{
-    margin:0;
-    padding:0;
+body{
+    color: #fff;
+    background-color:#f0f0f0;
+    font-family:helvetica;
+    background:url('http://clevertechie.com/img/bnet-bg.jpg') #0f2439 no-repeat center top;
 }
+
 
 h1 {
     font-size: 2em;
-    font-family: "Core Sans N W01 35 Light";
-    font-weight: normal;
     margin: .67em 0;
     display: block;
 }
@@ -144,12 +144,6 @@ input::selection {
     background: #037db6;
 }
 
-body{
-    color: #fff;
-    background-color:#f0f0f0;
-    font-family:helvetica;
-    background:url('http://clevertechie.com/img/bnet-bg.jpg') #0f2439 no-repeat center top;
-}
 
 .body-content{
     position:relative;
@@ -257,38 +251,10 @@ input[type="email"]:focus {
     border-color: rgba(255, 255, 255, 0.07);
     box-shadow: inset 1.5px 1.5px 3px rgba(0, 0, 0, 0.5);
 }
-.btn-primary {
-    background-color: #098cc8;
-    color: #ffffff;
-    border: 1px solid transparent;
-    box-shadow: 0 0 rgba(0, 0, 0, 0);
-    border-radius: 2px;
-    -webkit-transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
-    transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
-    background-image: -webkit-linear-gradient(top, #0f9ada, #0076ad);
-    background-image: linear-gradient(to bottom, #0f9ada, #0076ad);
-    border: 0;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
-}
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: #21b0f1;
-    color: #ffffff;
-    border-color: transparent;
-    box-shadow: 0 0 rgba(0, 0, 0, 0);
-}
-.btn-primary:active,
-.btn-primary.active {
-    background-color: #006899;
-    color: rgba(255, 255, 255, 0.7);
-    border-color: transparent;
-    box-shadow: inset 1.5px 1.5px 3px rgba(0, 0, 0, 0.5);
-}
-.btn-primary:hover,
-.btn-primary:focus {
-    background-image: -webkit-linear-gradient(top, #37c0ff, #0097dd);
-    background-image: linear-gradient(to bottom, #37c0ff, #0097dd);
-}
+
+
+
+
 .btn-primary:active,
 .btn-primary.active {
     background-image: -webkit-linear-gradient(top, #006ea1, #00608d);
