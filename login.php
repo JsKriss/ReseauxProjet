@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require('inc/pdo.php');
 require('inc/function.php');
 $title = 'Connexion';
@@ -45,16 +45,15 @@ include('inc/header.php'); ?>
 
 <h1>Connexion</h1>
 
-<form class="" action="login.php" method="post">
-  <label for="login">Pseudo or email *</label>
-  <input type="text" name="login" id="login" value="<?php if(!empty($_POST['login'])) { echo $_POST['login']; } ?>">
-  <p class="error"><?php if(!empty($errors['login'])) { echo $errors['login']; } ?></p>
+<form id="connexion" class="" action="login.php" method="post">
+      <label for="login">Pseudo or email *</label>
+      <input type="text" name="login" id="login" value="<?php if(!empty($_POST['login'])) { echo $_POST['login']; } ?>">
+      <p class="error"><?php if(!empty($errors['login'])) { echo $errors['login']; } ?></p>
 
-  <label for="password">Mot de passe *</label>
-  <input type="password" name="password" id="password" value="">
+      <label for="password">Mot de passe *</label>
+      <input type="password" name="password" id="password" value="">
 
-  <input type="submit" name="submited" value="Connexion">
-
+      <input type="submit" name="submited" value="Connexion">
 </form>
 <a href="forget_password.php">Mot de passe oublié</a>
 
