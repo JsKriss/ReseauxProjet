@@ -74,14 +74,16 @@ header{
     margin: 0 auto;
 
 }
+/* ---------------------------------------------------*/
 /* ------- Menu -------*/
+/* ---------------------------------------------------*/
 .topnav {
     background-color: #001033;
     overflow: hidden;
-
+    position: fixed;
     width: 100%;
     opacity: 0.7;
-
+    z-index: 3;
 }
 .logo{
     image: url(../img/logo.png);
@@ -111,7 +113,6 @@ header{
 .topnav .icon {
     display: none;
 }
-
 .imageback {
     /* The image used */
     /* Full height */
@@ -123,16 +124,35 @@ header{
     background-size: cover;
 }
 .un,.deux,.trois{
-    width: 100%;
+     width: 100%;
+     border-color: #0f2439;
 }
-.icon{
-    width: 15%;
-    margin-top: 150px;
-    margin-left: 9.1666666667%;
-    margin-right: 9.1666666667%;
+.un i{
+    color: cornflowerblue;
+    font-size: 8.1em;
+}
+.trois i{
+    font-size: 7.5em;
+    color: lightblue;
+}
+.deux i{
+    font-size: 8em;
+    color: cadetblue;
+    margin-left: 9px;
+}
+.icon:hover{
+    background-color: papayawhip;
+}
+.icons{
+    width: 193px;
+    height: 193px;
+    margin-top: 250px;
+    margin-left: 9.1%;
+    margin-right: 9.1%;
     float: left;
-    border: solid;
-    border-color: white;
+    background-color: darkgray;
+    padding: 30px;
+    border-radius: 193px;
 }
 /* ------- body -------*/
 
@@ -243,8 +263,58 @@ h3.job{
      visibility: hidden;
      overflow: hidden;
  }
-
-
+@media screen and (max-width: 1275px) {
+    .icons{
+        width: 153px;
+        height: 153px;
+        margin-top: 250px;
+        margin-left: 13%;
+        margin-right: 5%;
+        float: left;
+        background-color: darkgray;
+        padding: 30px;
+        border-radius: 153px;
+    }
+    .un i{
+        color: cornflowerblue;
+        font-size: 5.8em;
+    }
+    .trois i{
+        font-size: 5.2em;
+        color: lightblue;
+    }
+    .deux i{
+        font-size: 5.8em;
+        color: cadetblue;
+        margin-left: 7px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .icons{
+        width: 123px;
+        height: 123px;
+        margin-top: 250px;
+        margin-left: 13%;
+        margin-right: 5%;
+        float: left;
+        background-color: darkgray;
+        padding: 30px;
+        border-radius: 153px;
+    }
+    .un i{
+        color: cornflowerblue;
+        font-size: 4em;
+    }
+    .trois i{
+        font-size: 3.7em;
+        color: lightblue;
+    }
+    .deux i{
+        font-size: 3.8em;
+        color: cadetblue;
+        margin-left: 6px;
+    }
+}
 @media screen and (max-width: 900px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {

@@ -29,8 +29,8 @@
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
-        <div class="icon"> <img class="un" src="assets/img/information-logo-png.png"> </div>
-        <div class="icon"> <img class="deux" src="assets/img/utilisateur.png"> </div>
-        <div class="icon"> <img class="trois" src="assets/img/icons8-inscription-90.png"> </div>
+        <a class="un" href="#" > <div class="icons"> <i class="fas fa-info-circle"></i></div></a>
+        <a class="deux" href="#" > <div class="icons"> <i class="fas fa-user-tie"></i> </div></a>
+        <a class="trois" href="#" > <div class="icons"> <i class="fas fa-comments"></i> </div></a>
     </div>
 </header>
