@@ -16,7 +16,7 @@ if(!empty($_POST['submitted'])) {
   if(!empty($user)) {
     $token = $user['token'];
     $email = urlencode($email);
-    $html = '<a href="modif-password.php?email='.$email.'&token='.$token.'">Clique ici</a>';
+    $html = '<a href="modif-password.php?email='.$email.'&token='.$token.'">Modification de mot de passe : Redirection ... (à condition de cliquer).</a>';
     echo $html;
 
 
@@ -34,7 +34,7 @@ include('inc/header.php'); ?>
 <form class="" action="forget_password.php" method="post">
   <label for="email">Email *</label>
   <input type="text" name="email" value="<?php if(!empty($_POST['email'])) { echo $_POST['email'];}?>">
-  <p class="error"><?php if(!empty($errors['email'])) { echo $error['email'];}?></p>
+  <p class="error"><?php if(!empty($errors['email'])) { echo $errors['email'];}?></p>
 
   <input type="submit" name="submitted" value="Envoyer">
 </form>
