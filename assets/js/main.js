@@ -7,5 +7,11 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+// modal register
+$("#register").modal({
+    escapeClose: false,
+    clickClose: false,
+    showClose: false
+});
 
 });
