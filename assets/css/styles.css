@@ -291,6 +291,7 @@ h1 {
     width:450px;
     margin-left:auto;
     margin-right:auto;
+    background-color: red;
 }
 
 .user {
@@ -346,7 +347,6 @@ input[type="email"]
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: rgba(0, 0, 0, 0.5);
     color: rgba(255, 255, 255, 0.7);
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 2px;
 }
@@ -408,6 +408,9 @@ input[type="email"]:hover {
 }
 
 .img_register_modal{
-    max-width: 25%;
+    max-width: 30%;
     float: right;
+}
+input[type="submit"]{
+    cursor:pointer;
 }
