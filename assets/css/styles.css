@@ -62,10 +62,10 @@ table {
 a{text-decoration:none;}
 
 header{
-
     background-image: url(../img/fond-menu.jpg);
     background-size: 100%;
-
+    height: 100%;
+    background-repeat: no-repeat;
 }
 .wrap {
     max-width: 1100px;
@@ -77,7 +77,7 @@ header{
 .topnav {
     background-color: #001033;
     overflow: hidden;
-    position: fixed;
+
     width: 100%;
     opacity: 0.7;
 
@@ -136,10 +136,8 @@ h3.job{
 }
 .bloc{
     width: 100%;
-    padding-top: 60%;
-    background-image: url(../img/fond-menu.jpg);
-    background-size: 100%;
-
+    padding-top: 5%;
+    background-color: white;
 }
 .portrait{
     width:100%;
@@ -154,13 +152,9 @@ h3.job{
     padding: 5px 10px;
     color: #0f2439;
 }
-.bloc3:hover{
+.hexagonemainbefore img:hover{
 
-    background: radial-gradient(
-            rgba(255,255,255,0) 60%,
-            rgba(255,255,255,.8) 80%,
-            rgba(255,255,255,0) 100%
-    ) no-repeat;
+    opacity: 0.6;
 }
 /* -------- hexagone -------*/
 .hexagone {
