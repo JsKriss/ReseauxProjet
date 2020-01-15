@@ -75,8 +75,8 @@ if (!empty($_POST['submited'])) {
     }
 
 } //fermeture
-debug($_POST);
-debug($errors);
+// debug($_POST);
+// debug($errors);
 
 
 include('inc/header.php'); ?>
