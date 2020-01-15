@@ -30,7 +30,8 @@ if(!empty($_POST['submited'])) {
                 );
 
                 //debug($_SESSION);
-                //header ('Location: index.php');
+                //die('test');
+                header ('Location: index.php');
             } else {
                 $errors['login'] = 'Pseudo or email inconnu ou mot de passe oublié';
             }

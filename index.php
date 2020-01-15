@@ -1,9 +1,10 @@
 <?php
+session_start();
 include ('inc/pdo.php');
 include('inc/function.php');
 include('inc/header.php');
 
-session_start();
+
 ?>
 <div class="bloc">
     <div class="wrap">

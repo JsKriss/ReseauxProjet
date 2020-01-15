@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="./assets/css/style.css" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
-    <title></title>
+    <title>NETSCAN</title>
 </head>
 <body>
+<?php // var_dump($_SESSION);  ?>
 <header class="header">
 
     <div class="image">
