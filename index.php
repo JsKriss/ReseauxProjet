@@ -49,8 +49,8 @@ session_start();
     <div id="ex1" class="modal">
         <img class="portrait" src="assets/img/personnes.jpg" alt="">
         <div class="presentation">
-            <h2>Pierre</h2>
-            <h3>Responsable de Projet</h3>
+            <h2 class="prenom">Pierre</h2>
+            <h3 class="job">Responsable de Projet</h3>
             <ul class="lang">
                 <li class="material-icons">computer PHP</li>
                 <li class="material-icons">computer JQUERY</li>
@@ -60,8 +60,8 @@ session_start();
     <div id="ex2" class="modal">
         <img class="portrait" src="assets/img/personnes.jpg" alt="">
         <div class="presentation">
-            <h2>Yann</h2>
-            <h3>Développeur</h3>
+            <h2 class="prenom">Yann</h2>
+            <h3 class="job">Développeur</h3>
             <ul class="lang">
                 <li class="material-icons">computer PHP</li>
                 <li class="material-icons">computer JQUERY</li>
@@ -71,8 +71,8 @@ session_start();
     <div id="ex3" class="modal">
         <img class="portrait" src="assets/img/personnes.jpg" alt="">
         <div class="presentation">
-            <h2>Christopher</h2>
-            <h3>Développeur</h3>
+            <h2 class="prenom">Christopher</h2>
+            <h3 class="job">Développeur</h3>
             <ul class="lang">
                 <li class="material-icons">computer HTML/CSS</li>
                 <li class="material-icons">computer JQUERY</li>
@@ -82,8 +82,8 @@ session_start();
     <div id="ex4" class="modal">
         <img class="portrait" src="assets/img/personnes.jpg" alt="">
         <div class="presentation">
-            <h2>Antonin</h2>
-            <h3>Développeur</h3>
+            <h2 class="prenom">Antonin</h2>
+            <h3 class="job">Développeur</h3>
             <ul class="lang">
                 <li class="material-icons">computer HTML/CSS</li>
                 <li class="material-icons">computer JQUERY</li>
