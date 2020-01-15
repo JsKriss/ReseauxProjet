@@ -22,10 +22,11 @@
             <?php } else { ?>
             <a href="stats.php">Stat Me!</a>
             <a href="deconnexion.php">Deconnexion</a>
+            <?php } ?>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
-            <?php } ?>
+
         </nav>
     </div>
 </header>

@@ -65,7 +65,7 @@ header{
     height: 650px;
     background-image: url(../img/fond-menu.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
+
 }
 .wrap {
     max-width: 1100px;
@@ -110,25 +110,6 @@ header{
 .topnav .icon {
     display: none;
 }
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
-
 body {
     height: 2200px;
 }
@@ -188,13 +169,13 @@ h3.job{
 .hexagone {
     position: relative;
     /* Pour rendre responsive mettre width à 100% */;
-    width: 27.333%;
-    margin-right: 36.3335%;
-    margin-left: 36.3335%;
+    width: 30%;
+    margin-right: 35%;
+    margin-left: 35%;
     visibility: hidden;
     overflow: hidden;
   }
-  .hexagone:after {
+  .hexagone:after,.hexagone2:after {
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -203,7 +184,7 @@ h3.job{
     margin-top: 28.86751%;
     padding-bottom: 86.602%;
   }
-  .hexagone .hexagonemain{
+  .hexagone .hexagonemain,.hexagone2 .hexagonemain{
     display: block;
     position: absolute;
     width: 100%;
@@ -215,7 +196,7 @@ h3.job{
     transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
     z-index: 1;
   }
-  .hexagone .hexagonemainbefore{
+  .hexagone .hexagonemainbefore,.hexagone2 .hexagonemainbefore{
     content: "";
     display: block;
     position: absolute;
@@ -229,18 +210,17 @@ h3.job{
     -ms-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
     transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
   }
-  .hexagone .hexagonecontent{
+  .hexagone .hexagonecontent,.hexagone2 .hexagonecontent{
     overflow-y: auto;
     width: 100%;
     display: block;
-    position: absolute;
     visibility: visible;
     bottom: 25%;
     top: 25%;
     left: 0;
     z-index: 3;
   }
-  .hexagone img{
+  .hexagone img,.hexagone2 img{
     left: -100%;
     right: -100%;
     width: auto;
@@ -250,71 +230,34 @@ h3.job{
     -ms-transform: rotate3d(0,0,0,0deg);
     transform: rotate3d(0,0,0,0deg);
   }
-
 
 .hexagone2 {
-    position: relative;
-    /* Pour rendre responsive mettre width à 100% */;
-    width: 27.333%;
-    margin-right: 3%;
-    margin-left: 3%;
-    float: left;
-    visibility: hidden;
-    overflow: hidden;
-}
-.hexagone2:after {
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    content: "";
-    display: block;
-    margin-top: 28.86751%;
-    padding-bottom: 86.602%;
-}
-.hexagone2 .hexagonemain{
-    display: block;
-    position: absolute;
-    width: 100%;
-    padding-bottom: 115.47005%;
-    overflow: hidden;
-    visibility: hidden;
-    -webkit-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
-    -ms-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
-    transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
-    z-index: 1;
-}
-.hexagone2 .hexagonemainbefore{
-    content: "";
-    display: block;
-    position: absolute;
-    visibility: visible;
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #cccccc;
-    -webkit-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
-    -ms-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
-    transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
-}
-.hexagone2 .hexagonecontent{
-    overflow-y: auto;
-    width: 100%;
-    display: block;
-    position: absolute;
-    visibility: visible;
-    bottom: 25%;
-    top: 25%;
-    left: 0;
-    z-index: 3;
-}
-.hexagone2 img{
-    left: -100%;
-    right: -100%;
-    width: auto;
-    height: 100%;
-    margin-left: -40%;
-    -webkit-transform: rotate3d(0,0,0,0deg);
-    -ms-transform: rotate3d(0,0,0,0deg);
-    transform: rotate3d(0,0,0,0deg);
+     position: relative;
+     /* Pour rendre responsive mettre width à 100% */;
+     width: 30%;
+     margin-right: 10%;
+     margin-left: 10%;
+     float: left;
+     visibility: hidden;
+     overflow: hidden;
+ }
+
+
+@media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }

@@ -35,7 +35,7 @@ session_start();
             </div>
         </a>
         <a href="#ex4" rel="modal:open">
-            <div class="hexagone2">
+            <div class="hexagone">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
                         <img class="portrait" src="assets/img/personnes.jpg" alt="">
