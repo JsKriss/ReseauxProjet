@@ -7,3 +7,7 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+$('a[data-modal]').on('click', function() {
+    $($(this).data('modal')).modal();
+    return false;
+});
