@@ -8,42 +8,34 @@ include('inc/header.php');
 ?>
 <div class="bloc">
     <div class="wrap">
-        <a href="#ex1" rel="modal:open">
             <div class="hexagone">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
-                        <img src="assets/img/personnes.jpg" alt="">
+                        <a href="#ex1" rel="modal:open">      <img src="assets/img/personnes.jpg" alt="">  </a>
                     </div>
                 </div>
             </div>
-        </a>
-        <a href="#ex2" rel="modal:open">
             <div class="hexagone2">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
-                        <img class="portrait" src="assets/img/personnes.jpg" alt="">
+                        <a href="#ex2" rel="modal:open">   <img class="portrait" src="assets/img/personnes.jpg" alt=""> </a>
                     </div>
                 </div>
             </div>
-        </a>
-        <a href="#ex3" rel="modal:open">
             <div class="hexagone2">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
-                        <img class="portrait" src="assets/img/personnes.jpg" alt="">
+                        <a href="#ex3" rel="modal:open">  <img class="portrait" src="assets/img/personnes.jpg" alt=""> </a>
                     </div>
                 </div>
             </div>
-        </a>
-        <a href="#ex4" rel="modal:open">
             <div class="hexagone">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
-                        <img class="portrait" src="assets/img/personnes.jpg" alt="">
+                        <a href="#ex4" rel="modal:open">   <img class="portrait" src="assets/img/IMG_1047.jpeg" alt=""> </a>
                     </div>
                 </div>
             </div>
-        </a>
     </div>
 
     <!-- Link to open the modal -->
