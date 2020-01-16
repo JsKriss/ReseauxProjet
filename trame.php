@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <link rel="stylesheet" href="assets/css/table.css">
 <?php
 require('inc/function.php');

@@ -16,7 +16,7 @@ if(!empty($_POST['submitted'])) {
   if(!empty($user)) {
     $token = $user['token'];
     $email = urlencode($email);
-    $html = '<a href="modif-password.php?email='.$email.'&token='.$token.'">Modification de mot de passe : Redirection ... (à condition de cliquer).</a>';
+    $html = '<div id="sub-modal" class="modal_form"><a href="modif-password.php?email='.$email.'&token='.$token.'">Modification de mot de passe : Redirection ... (à condition de cliquer).</a></div>';
     echo $html;
 
 
@@ -29,15 +29,21 @@ if(!empty($_POST['submitted'])) {
 
 include('inc/header.php'); ?>
 
-<h1>MDP Oublié</h1>
+    <div id="sub-modal" class="modal_form">
+        <h1>MDP Oublié</h1>
 
-<form class="" action="forget_password.php" method="post">
-  <label for="email">Email *</label>
-  <input type="text" name="email" value="<?php if(!empty($_POST['email'])) { echo $_POST['email'];}?>">
-  <p class="error"><?php if(!empty($errors['email'])) { echo $errors['email'];}?></p>
+        <form class="" action="forget_password.php" method="post">
+            <label for="email">Email *</label>
+            <input type="text" name="email" value="<?php if (!empty($_POST['email'])) {
+                echo $_POST['email'];
+            } ?>">
+            <p class="error"><?php if (!empty($errors['email'])) {
+                    echo $errors['email'];
+                } ?></p>
 
-  <input type="submit" name="submitted" value="Envoyer">
-</form>
+            <input type="submit" name="submitted" value="Envoyer">
+        </form>
+    </div>
 
 <?php
 include('inc/footer.php');

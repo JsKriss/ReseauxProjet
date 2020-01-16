@@ -430,7 +430,7 @@ h1 {
 /*début du formulaire d'inscription*/
 
 /*hauteur modal*/
-.module{
+.modal_form{
     position:relative;
     top:10%;
     height:65%;
@@ -560,3 +560,4 @@ input[type="email"]:hover {
 input[type="submit"]{
     cursor:pointer;
 }
+
