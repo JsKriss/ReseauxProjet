@@ -73,7 +73,7 @@ include('inc/header.php');
         </div>
     </div>
     <div id="ex4" class="modal">
-        <img class="portrait" src="assets/img/personnes.jpg" alt="">
+        <img class="portrait" src="assets/img/IMG_1047.jpeg.jpg" alt="">
         <div class="presentation">
             <h2 class="prenom">Antonin</h2>
             <h3 class="job">Développeur</h3>

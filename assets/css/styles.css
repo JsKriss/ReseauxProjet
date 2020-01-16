@@ -63,7 +63,8 @@ a{text-decoration:none;}
 
 header{
     background-image: url(../img/fond-menu.jpg);
-    background-size: 100%;
+    background-size: 150%;
+    background-position: center;
     height:650px;
     background-repeat: no-repeat;
     background-attachment: fixed, scroll;
@@ -129,7 +130,7 @@ header{
 }
 .un i{
     color: cornflowerblue;
-    font-size: 8.1em;
+    font-size: 8.4em;
 }
 .trois i{
     font-size: 7.5em;
@@ -146,7 +147,7 @@ header{
 .icons{
     width: 193px;
     height: 193px;
-    margin-top: 250px;
+    margin-top: 195px;
     margin-left: 9.1%;
     margin-right: 9.1%;
     float: left;
@@ -155,7 +156,6 @@ header{
     border-radius: 193px;
 }
 /* ------- body -------*/
-
 h2.prenom{
     font-size: 3.8em;
     padding: 20px 0;
@@ -252,7 +252,6 @@ h3.job{
     -ms-transform: rotate3d(0,0,0,0deg);
     transform: rotate3d(0,0,0,0deg);
   }
-
 .hexagone2 {
      position: relative;
      /* Pour rendre responsive mettre width à 100% */;
@@ -263,91 +262,104 @@ h3.job{
      visibility: hidden;
      overflow: hidden;
  }
+#ex4{
+    background-color: red;
+}
+#ex1{
+    background-color: red;
+}
 @media screen and (max-width: 1275px) {
     .icons{
         width: 153px;
         height: 153px;
-        margin-top: 250px;
+        margin-top: 215px;
         margin-left: 13%;
         margin-right: 5%;
         float: left;
         background-color: darkgray;
-        padding: 30px;
+        padding: 25px;
         border-radius: 153px;
     }
     .un i{
         color: cornflowerblue;
-        font-size: 5.8em;
+        font-size: 6.5em;
     }
     .trois i{
-        font-size: 5.2em;
+        font-size: 5.8em;
         color: lightblue;
     }
     .deux i{
-        font-size: 5.8em;
+        font-size: 6.9em;
         color: cadetblue;
-        margin-left: 7px;
+        margin-left: 3px;
     }
 }
 @media screen and (max-width: 1000px) {
     .icons{
         width: 123px;
         height: 123px;
-        margin-top: 230px;
+        margin-top: 240px;
         margin-left: 13%;
         margin-right: 5%;
         float: left;
         background-color: darkgray;
-        padding: 30px;
+        padding: 20px;
         border-radius: 123px;
     }
     .un i{
         color: cornflowerblue;
-        font-size: 4em;
+        font-size: 5.3em;
     }
     .trois i{
-        font-size: 3.7em;
+        font-size: 4.7em;
         color: lightblue;
     }
     .deux i{
-        font-size: 3.8em;
+        font-size: 5.4em;
         color: cadetblue;
-        margin-left: 6px;
+        margin-left: 5px;
     }
 }
 @media screen and (max-width: 810px) {
     .icons{
         width: 103px;
         height: 103px;
-        margin-top: 200px;
+        margin-top: 230px;
         margin-left: 13%;
         margin-right: 5%;
         float: left;
         background-color: darkgray;
-        padding: 20px;
+        padding: 15px;
         border-radius: 103px;
     }
     .un i{
         color: cornflowerblue;
-        font-size: 4.1em;
+        font-size: 4.6em;
     }
     .trois i{
-        font-size: 3.6em;
+        font-size: 4em;
         color: lightblue;
     }
     .deux i{
-        font-size: 4.1em;
+        font-size: 4.8em;
         color: cadetblue;
-        margin-left: 3px;
+        margin-left: 2px;
+    }
+    header{
+        background-image: url(../img/fond-menu.jpg);
+        background-size: 180%;
+        background-position: center;
+        height:650px;
+        background-repeat: no-repeat;
+        background-attachment: fixed, scroll;
     }
 }
 @media screen and (max-width: 680px) {
     .icons{
         width: 113px;
         height: 113px;
-        margin-top: 160px;
+        margin-top: 220px;
         margin-left: 10%;
-
         float: left;
         background-color: darkgray;
         padding: 20px;
@@ -369,26 +381,34 @@ h3.job{
 }
 @media screen and (max-width: 650px) {
     .icons{
-        width: 153px;
-        height: 153px;
-        margin-top: 160px;
+        width: 123px;
+        height: 123px;
+        margin-top: 90px;
         margin-left: 40%;
         background-color: darkgray;
         padding: 20px;
-        border-radius: 153px;
+        border-radius: 123px;
     }
     .un i{
         color: cornflowerblue;
-        font-size: 7em;
+        font-size: 5.2em;
     }
     .trois i{
-        font-size: 6.1em;
+        font-size: 4.7em;
         color: lightblue;
     }
     .deux i{
-        font-size: 6.9em;
+        font-size: 5.5em;
         color: cadetblue;
-        margin-left: 8px;
+        margin-left: 2px;
+    }
+    header{
+        background-image: url(../img/fond-menu.jpg);
+        background-size: 200%;
+        background-position: center;
+        height:650px;
+        background-repeat: no-repeat;
+        background-attachment: fixed, scroll;
     }
 }
 @media screen and (max-width: 900px) {
