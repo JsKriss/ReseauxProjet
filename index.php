@@ -73,7 +73,7 @@ include('inc/header.php');
         </div>
     </div>
     <div id="ex4" class="modal">
-        <img class="portrait" src="assets/img/IMG_1047.jpeg.jpg" alt="">
+        <img class="portrait" src="assets/img/IMG_1047.jpeg" alt="">
         <div class="presentation">
             <h2 class="prenom">Antonin</h2>
             <h3 class="job">Développeur</h3>
@@ -81,6 +81,21 @@ include('inc/header.php');
                 <li class="material-icons">computer HTML/CSS</li>
                 <li class="material-icons">computer JQUERY</li>
             </ul>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="bloc1">
+            <div class="target"> <img class="trapG" src="assets/img/fond-menu.jpg"> </div>
+            <p> lorem </p>
+        </div>
+        <div class="bloc1">
+            <div class="work"> <img class="trapC" src="assets/img/fond-menu.jpg"> </div>
+            <p> lorem </p>
+        </div>
+        <div class="bloc1">
+            <div class="entreprise"> <img class="trapD" src="assets/img/fond-menu.jpg"> </div>
+            <p> lorem </p>
         </div>
     </div>
 
