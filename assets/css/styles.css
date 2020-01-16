@@ -293,13 +293,13 @@ h3.job{
     .icons{
         width: 123px;
         height: 123px;
-        margin-top: 250px;
+        margin-top: 230px;
         margin-left: 13%;
         margin-right: 5%;
         float: left;
         background-color: darkgray;
         padding: 30px;
-        border-radius: 153px;
+        border-radius: 123px;
     }
     .un i{
         color: cornflowerblue;
@@ -313,6 +313,82 @@ h3.job{
         font-size: 3.8em;
         color: cadetblue;
         margin-left: 6px;
+    }
+}
+@media screen and (max-width: 810px) {
+    .icons{
+        width: 103px;
+        height: 103px;
+        margin-top: 200px;
+        margin-left: 13%;
+        margin-right: 5%;
+        float: left;
+        background-color: darkgray;
+        padding: 20px;
+        border-radius: 103px;
+    }
+    .un i{
+        color: cornflowerblue;
+        font-size: 4.1em;
+    }
+    .trois i{
+        font-size: 3.6em;
+        color: lightblue;
+    }
+    .deux i{
+        font-size: 4.1em;
+        color: cadetblue;
+        margin-left: 3px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .icons{
+        width: 113px;
+        height: 113px;
+        margin-top: 160px;
+        margin-left: 10%;
+
+        float: left;
+        background-color: darkgray;
+        padding: 20px;
+        border-radius: 113px;
+    }
+    .un i{
+        color: cornflowerblue;
+        font-size: 4.5em;
+    }
+    .trois i{
+        font-size: 4em;
+        color: lightblue;
+    }
+    .deux i{
+        font-size: 4.7em;
+        color: cadetblue;
+        margin-left: 3px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .icons{
+        width: 153px;
+        height: 153px;
+        margin-top: 160px;
+        margin-left: 40%;
+        background-color: darkgray;
+        padding: 20px;
+        border-radius: 153px;
+    }
+    .un i{
+        color: cornflowerblue;
+        font-size: 7em;
+    }
+    .trois i{
+        font-size: 6.1em;
+        color: lightblue;
+    }
+    .deux i{
+        font-size: 6.9em;
+        color: cadetblue;
+        margin-left: 8px;
     }
 }
 @media screen and (max-width: 900px) {
