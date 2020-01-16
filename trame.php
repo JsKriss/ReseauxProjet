@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <link rel="stylesheet" href="assets/css/table.css">
 <?php
 require('inc/function.php');
@@ -110,8 +111,6 @@ require("inc/header.php"); ?>
 
         }
     });
-    chart.canvas.parentNode.style.height = '100px';
-    chart.canvas.parentNode.style.width = '100px';
 </script>
 
 
