@@ -111,8 +111,6 @@ require("inc/header.php"); ?>
 
         }
     });
-    chart.canvas.parentNode.style.height = '100px';
-    chart.canvas.parentNode.style.width = '100px';
 </script>
 
 

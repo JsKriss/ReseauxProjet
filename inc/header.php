@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/ccdb885e15.js" crossorigin="anonymous"></script>
     <title>NETSCAN</title>
 </head>
+
 <body>
 <?php // var_dump($_SESSION);  ?>
 <header class="header">
