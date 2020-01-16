@@ -86,10 +86,7 @@ header{
     opacity: 0.7;
     z-index: 3;
 }
-.logo{
-    image: url(../img/logo.png);
-    width: 40px;
-}
+
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
@@ -430,7 +427,7 @@ h3.job{
     }
 }
 body{
-    color: #fff;
+    color: black;
     background-color:#f0f0f0;
     font-family:helvetica;
     background:url('http://clevertechie.com/img/bnet-bg.jpg') #0f2439 no-repeat center top;
@@ -451,7 +448,7 @@ h1 {
 /*début du formulaire d'inscription*/
 
 /*hauteur modal*/
-#register.modal{
+.modal{
     position:relative;
     top:10%;
     height:65%;
@@ -539,10 +536,6 @@ input[type="email"]:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: rgba(255, 255, 255, 0.7);
 }
-
-
-
-
 .alert {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -575,9 +568,20 @@ input[type="email"]:hover {
 }
 
 .img_register_modal{
-    max-width: 30%;
+    max-width: 20%;
+    padding-top: 10px;
     float: right;
 }
 input[type="submit"]{
     cursor:pointer;
+    border-radius: 20px;
+
+}
+div#register.modal{
+    background-image: url("../img/ce4021522de43d54ac9a6a335e46e335.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+
 }

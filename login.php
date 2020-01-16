@@ -42,7 +42,7 @@ if(!empty($_POST['submited'])) {
 }
 
 include('inc/header.php'); ?>
-
+<div id="login" class="modal">
 <h1>Connexion</h1>
 
 <form id="connexion" class="" action="login.php" method="post">
@@ -56,6 +56,7 @@ include('inc/header.php'); ?>
       <input type="submit" name="submited" value="Connexion">
 </form>
 <a href="forget_password.php">Mot de passe oublié</a>
+</div>
 
 
 <?php
