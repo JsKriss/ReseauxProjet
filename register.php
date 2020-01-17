@@ -85,7 +85,7 @@ include('inc/header.php'); ?>
             <a href="index.php"><i class="fas fa-times-circle"></i></a>
             <h1 id="idh1"  class="register_titlte">Inscription</h1>
             <form class="form" action="register.php" method="post">
-                <div class="alert-error"></div>
+
                 <div class="register_container">
                     <label for="pseudo">Pseudo *</label>
                     <input type="text" name="pseudo" id="pseudo" value="<?php if (!empty($_POST['pseudo'])) {

@@ -520,10 +520,8 @@ p{
 /* --------------------------------- */
 
 body{
-    color: #fff;
-    background-color:#f0f0f0;
-    font-family:helvetica;
-    background:url('http://clevertechie.com/img/bnet-bg.jpg') #0f2439 no-repeat center top;
+    color: black;
+
 }
 
 
@@ -600,74 +598,42 @@ input[type="email"]
     margin-bottom: 10px;
     font-size: 15px;
     line-height: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgba(255, 255, 255, 0.7);
+    background-color: #181f2b;
+    color: black;
     box-sizing: border-box;
     border-radius: 2px;
 }
 
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    -webkit-transition: background-position 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
-    transition: background-position 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
-}
+
 select:hover,
 textarea:hover,
 input[type="text"]:hover,
 input[type="password"]:hover,
 input[type="email"]:hover {
-    border-color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.07);
+    color: black;
 }
 
-
-
-
-.alert {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 4px 20px 4px 20px;
-    font-size: 13px;
-    line-height: 20px;
-    margin-bottom: 20px;
-    text-shadow: none;
-    position: relative;
-    background-color: #272e3b;
-    color: rgba(255, 255, 255, 0.7);
-    border: 1px solid #000;
-    box-shadow: 0 0 0 1px #363d49 inset, 0 5px 10px rgba(0, 0, 0, 0.75);
-}
-.alert-error {
-    color: #f00;
-    background-color: #360e10;
-    box-shadow: 0 0 0 1px #551e21 inset, 0 5px 10px rgba(0, 0, 0, 0.75);
-}
-.alert:empty{
-    display: none;
-}
-.alert-success {
-    color: #21ec0c;
-    background-color: #15360e;
-    box-shadow: 0 0 0 1px #2a551e inset, 0 5px 10px rgba(0, 0, 0, 0.75);
-}
 .register_titlte{
     text-align: center;
 }
 
 .img_register_modal{
+    background-image: url(../img/logo.png);
     max-width: 30%;
     float: right;
 }
 input[type="submit"]{
     cursor:pointer;
+    border-radius: 3px ;
+}
+i.fa-times-circle{
+    color: black;
+}
+p.error{
+    color: #f00906;
+}
+div#register.modal{
+    margin-bottom: 10px;
 }
 
