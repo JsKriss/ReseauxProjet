@@ -12,26 +12,34 @@
 
 <body>
 <?php // var_dump($_SESSION);  ?>
-<header class="header">
-
-    <div class="image">
-        <nav class="topnav" id="myTopnav">
-            <a href="index.php" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <?php if (!is_logged()) { ?>
-            <a href="login.php">Connexion</a>
-            <a href="register.php">Inscription</a>
-            <?php } else { ?>
-            <a href="trame.php">Stat Me!</a>
-            <a href="deconnexion.php">Deconnexion</a>
-            <?php } ?>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
-        <a class="un" href="#" > <div class="icons"> <i class="fas fa-info-circle"></i></div></a>
-        <a class="deux" href="#" > <div class="icons"> <i class="fas fa-user-tie"></i> </div></a>
-        <a class="trois" href="#" > <div class="icons"> <i class="fas fa-comments"></i> </div></a>
+<header class="header_accueil">
+    <div class="box_logo">
+        <a href=""><img src="assets/img/logo.png" alt=""></a>
     </div>
+    <nav class="topnav" id="myTopnav">
+        <ul>
+            <li><a href="index.php" class="active">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <?php if (!is_logged()) { ?>
+                <li><a href="login.php">Connexion</a></li>
+                <li><a href="register.php">Inscription</a></li>
+            <?php } else { ?>
+                <li><a href="trame.php">Stat Me!</a></li>
+                <li><a href="deconnexion.php">Deconnexion</a></li>
+            <?php } ?>
+            <div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            </div>
+        </ul>
+    </nav>
+    <a class="un" href="#">
+        <div class="icons"><i class="fas fa-info-circle"></i></div>
+    </a>
+    <a class="deux" href="#">
+        <div class="icons"><i class="fas fa-user-tie"></i></div>
+    </a>
+    <a class="trois" href="#">
+        <div class="icons"><i class="fas fa-comments"></i></div>
+    </a>
 </header>
