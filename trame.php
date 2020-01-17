@@ -4,13 +4,12 @@
 require('inc/function.php');
 $fichier = file_get_contents('files/trameReseau.json');
 $json = json_decode($fichier, true);
-//    echo "<pre>";
-//    var_dump($json[0]);
-//    echo "</pre>";
+//debug($json);
 
 require("inc/header.php"); ?>
 
 <canvas id="myChart"></canvas>
+<canvas id="chartMac"></canvas>
 
 <div class="wrap-tableau">
     <div class="container">
@@ -33,6 +32,9 @@ require("inc/header.php"); ?>
                     <?php
                     $tcp = 0;
                     $udp = 0;
+                    $apple = 0;
+                    $wd = 0;
+                    $autres = 0;
                     $count = count($json);
                     //        if(is_logged()) {
                     for ($i = 0; $i < $count; $i++) {
@@ -53,6 +55,16 @@ require("inc/header.php"); ?>
                         if (isset($row['eth'])) {
                             echo '<td>' . $json[$i]['_source']['layers']['eth']['eth.src'] . '</td>';
                             echo '<td>' . $json[$i]['_source']['layers']['eth']['eth.dst'] . '</td>';
+                            if($json[$i]['_source']['layers']['eth']['eth.src_tree']['eth.addr.oui_resolved'] == 'Apple, Inc.') {
+                                $apple++;
+                                //echo($apple);
+                            } else if($json[$i]['_source']['layers']['eth']['eth.src_tree']['eth.addr.oui_resolved'] == 'Intel Corporate') {
+//                                $wd++;
+                                echo($wd);
+                            } else {
+                                $autres++;
+//                                echo($autres);
+                            }
                         } else {
                             echo '<td></td>';
                             echo '<td></td>';
@@ -85,9 +97,9 @@ require("inc/header.php"); ?>
         </div>
     </div>
 </div>
-
-
 <script>
+
+
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'pie',
@@ -111,6 +123,34 @@ require("inc/header.php"); ?>
 
         }
     });
+
+    var ctx2 = document.getElementById('chartMac').getContext('2d');
+    var chartMac = new Chart(ctx2, {
+        type: 'pie',
+        data: {
+            labels: ['Apple', 'Intel', 'Autres'],
+            datasets: [{
+                label: 'Types de connexions',
+                data: [<?=$apple?>, <?=$wd?>, <?=$autres?>],
+                backgroundColor: [
+                    'rgba(255, 165, 0, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(155, 155, 155,0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 165, 0, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(155, 155, 155,1)'
+                ],
+
+                borderWidth: 1
+            }]
+        },
+        options: {
+
+        }
+    });
+
 </script>
 
 
