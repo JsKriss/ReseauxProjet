@@ -57,6 +57,7 @@ include('inc/header.php'); ?>
       <input type="submit" name="submited" value="Connexion">
 </form>
 <a href="forget_password.php">Mot de passe oublié</a>
+    <div><img class="img_register_modal" src="assets/img/logo.png"></div>
 </div>
 
 
