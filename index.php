@@ -86,7 +86,7 @@ include('inc/header.php');
 
     <div class="about">
         <div class="bloc1">
-            <div class="target"> <img class="trapG" src="assets/img/fond-menu.jpg"> </div>
+            <div class="target"> <img class="trapG" src="assets/img/fond-menu.jpg"> </div>-->
             <p> lorem </p>
         </div>
         <div class="bloc1">
