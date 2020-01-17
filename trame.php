@@ -1,4 +1,15 @@
-<?php session_start() ?>
+<?php session_start();
+require './vendor/autoload.php';
+
+use JasonGrimes\Paginator;
+
+$totalItems = 1000;
+$itemsPerPage = 20;
+$currentPage = 0;
+$urlPattern = '/foo/page/(:num)';
+
+$paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
+?>
     <link rel="stylesheet" href="assets/css/table.css">
 <?php
 require('inc/function.php');
