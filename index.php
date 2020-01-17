@@ -85,7 +85,7 @@ include('inc/header.php');
     </div>
 </div>
 <div class="about">
-    <div class="blocs"
+    <div class="blocs">
      <h2 class="aboutus">About us</h2>
     </div>
     <div class="blocs">
@@ -94,16 +94,19 @@ include('inc/header.php');
     </div>
     <div class="blocs">
         <div class="bloc1">
-            <div class="target">  </div>
-            <p> lorem </p>
+            <div>
+                <p class="text"> <img class="target" src="assets/img/target.png"> </p>
+            </div>
         </div>
         <div class="bloc1">
-            <div class="work">  </div>
-            <p> lorem </p>
+            <div >
+                <p class="text"> <img class="work" src="assets/img/reseau.png"> </p>
+            </div>
         </div>
         <div class="bloc1">
-            <div class="entreprise">  </div>
-            <p> lorem </p>
+            <div >
+             <p class="text"> <img class="entreprise" src="assets/img/societe.png"> </p>
+            </div>
         </div>
     </div>
 </div>

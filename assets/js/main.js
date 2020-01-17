@@ -23,6 +23,25 @@ $("#connexion").modal({
 $('#sub-modal').modal({
     closeExisting: false
 });
-
-
+$('.text').on('click',function(){
+    console.log('fvjfvjf')
+    var txt1 = 'fuhfkfkd fjdkfdk';
+    var txt2 = 'hfjdhgfjkghfj hfjgfjkdnv'
+    var txt3 = 'yf fehfghef eujhdj fu'
+    if($('.target')){
+        $(this).fadeOut(1000,function() {
+            $('.target').append('<p>' + txt1 + '</p>');
+        })
+            if ($('.work')){
+                $(this).fadeOut(1000,function() {
+                    $('.work').after('<p>' + txt2 + '</p>');
+                })
+                if ($('.entreprise')) {
+                    $(this).fadeOut(1000, function () {
+                        $('.entreprise').after('<p>' + txt3 + '</p>');
+                    })
+                }
+            }
+        };
+    });
 });
