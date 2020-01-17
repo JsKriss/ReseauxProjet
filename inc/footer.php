@@ -1,5 +1,5 @@
 <footer>
-     <a href="mentions_legales.php">Mentions Légales</a>
+
 
     <script
             src="https://code.jquery.com/jquery-2.2.4.min.js"
