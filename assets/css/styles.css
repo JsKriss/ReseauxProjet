@@ -224,7 +224,7 @@ h3.job{
 }
 .bloc{
     width: 100%;
-    padding-top: 5%;
+    padding: 5% 0;
     background-color: white;
 }
 .portrait{
@@ -334,32 +334,39 @@ h3.job{
 }
 .about{
     height: 600px;
-    background-color: rgba(124,36,67,0.4);
+    background-color: rgba(48,155,189,0.2);
 }
 .bloc1{
-    margin-top: 5%;
+    margin-top: 17.5%;
+    padding: 20px;
 
-    border: solid;
+    height: 100px;
+    width: 150px;
+    margin-left: 100px;
 }
 .blocs{
     width: 33.3333%;
     float: left;
 }
 .bar{
-    width:400px;
+    width:500px;
     border: solid 2px;
     transform: rotate(-70deg);
-    margin-top: 150px;
+    margin-top: 290px;
 }
 p{
     color: #ff6f6d;
     text-align: center;
 }
+.target,.entreprise,.work{
+    width: 50%;
+}
 .aboutus{
     text-align: center;
     margin-top: 200px;
-    font-size: 5em;
-    border: solid;
+    font-size: 7vw;
+    padding: 20px;
+    margin-left: 50px;
 }
 /* --------------------------------- */
 /* ------- RESPONSIVE -------*/
