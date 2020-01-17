@@ -85,25 +85,50 @@ header{
 /* ---------------------------------------------------*/
 /* ------- Menu -------*/
 /* ---------------------------------------------------*/
-
-.box_logo {
+.header-acceuil {
+    position: fixed;
+    top: 0;
+    z-index: 2;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: indigo;
+}
+.box_logo {
     display: inline;
     float: left;
     z-index: 3;
-    position: fixed;
 }
 .box_logo img {
     width: 100px;
 }
 .topnav {
     float: left;
-    background-color: #8b8b8b;
-    overflow: hidden;
+    margin-left: 6%;
     position: fixed;
     width: 100%;
-    opacity: 0.7;
     z-index: 3;
+    background-color: lime;
+}
+nav .nav {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 31px;
+    font-size: 1em;
+}
+.nav{
+    width: 100%;
+}
+.nav li{
+    float: left;
+}
+nav .nav li a {
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 
@@ -296,6 +321,8 @@ h3.job{
      visibility: hidden;
      overflow: hidden;
  }
+/*JS HEXAGONE*/
+
 
 /* --------------------------------- */
 /* ------- FIN EXAGONE -------*/

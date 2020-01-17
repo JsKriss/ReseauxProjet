@@ -17,7 +17,7 @@
         <a href=""><img src="assets/img/logo.png" alt=""></a>
     </div>
     <nav class="topnav" id="myTopnav">
-        <ul>
+        <ul class="nav navbar">
             <li><a href="index.php" class="active">Home</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -33,13 +33,13 @@
             </div>
         </ul>
     </nav>
-    <a class="un" href="#">
-        <div class="icons"><i class="fas fa-info-circle"></i></div>
-    </a>
-    <a class="deux" href="#">
-        <div class="icons"><i class="fas fa-user-tie"></i></div>
-    </a>
-    <a class="trois" href="#">
-        <div class="icons"><i class="fas fa-comments"></i></div>
-    </a>
+    <div id="shakeIcons" class="icons">
+        <a class="un" href=""><i class="fas fa-info-circle"></i></a>
+    </div>
+    <div id="shakeIcons" class="icons">
+        <a class="deux" href=""><i class="fas fa-user-tie"></i></a>
+    </div>
+    <div id="shakeIcons" class="icons">
+        <a class="trois" href=""><i class="fas fa-comments"></i></a>
+    </div>
 </header>
