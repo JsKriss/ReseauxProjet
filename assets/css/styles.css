@@ -305,56 +305,34 @@ h3.job{
     margin-top: 100px;
     width: 350px;
 }
-.target{
-    width:100%;
-    height:200px;
-    background:#069;
-    -webkit-transform:skew(-20deg);
-    margin-left: -36px;
-}
-.entreprise{
-    width:100%;
-    height:200px;
-    background:#069;
-    -webkit-transform:skew(-20deg);
-    margin-left: 37px;
-    margin-top: 60px;
-}
-.work{
-    width: 100%;
-    height:200px;
-    background:#069;
-    -webkit-transform:skew(-20deg);
-    margin-top: 30px;
+.about{
+    height: 400px;
+    margin-top: 150px;
 }
 .bloc1{
     margin-top: 5%;
-   width: 33.33%;
+
+    border: solid;
+}
+.blocs{
+    width: 33.3333%;
     float: left;
 }
-.trapG{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    clip-path:  polygon(33.5% 0%, 33.5% 26.25%, 0% 26.25%, 0% 0%);
-    width: 300%;
-}
-.trapC{
-    position: absolute;
-    left: -442px;
-    top: -10px;
-    clip-path:  polygon(67% 2%, 67% 30.5%, 34.5% 30.5%, 34.5% 2%);
-    width: 300%;
-}
-.trapD{
-    position: absolute;
-    left: -800px;
-    top: -7px;
-    clip-path:  polygon(100% 1%, 100% 32.5%, 70% 32.5%, 70% 1%);
-    width: 270%;
+.bar{
+    width:400px;
+    border: solid 2px;
+    transform: rotate(-70deg);
+    margin-top: 150px;
 }
 p{
     color: #ff6f6d;
+    text-align: center;
+}
+.aboutus{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 5em;
+    border: solid;
 }
 /* --------------------------------- */
 /* ------- RESPONSIVE -------*/

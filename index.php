@@ -83,22 +83,29 @@ include('inc/header.php');
             </ul>
         </div>
     </div>
-
-    <div class="about">
+</div>
+<div class="about">
+    <div class="blocs"
+     <h2 class="aboutus">About us</h2>
+    </div>
+    <div class="blocs">
+        <div class="bar">
+        </div>
+    </div>
+    <div class="blocs">
         <div class="bloc1">
-            <div class="target"> <img class="trapG" src="assets/img/fond-menu.jpg"> </div>-->
+            <div class="target">  </div>
             <p> lorem </p>
         </div>
         <div class="bloc1">
-            <div class="work"> <img class="trapC" src="assets/img/fond-menu.jpg"> </div>
+            <div class="work">  </div>
             <p> lorem </p>
         </div>
         <div class="bloc1">
-            <div class="entreprise"> <img class="trapD" src="assets/img/fond-menu.jpg"> </div>
+            <div class="entreprise">  </div>
             <p> lorem </p>
         </div>
     </div>
-
 </div>
 
 
