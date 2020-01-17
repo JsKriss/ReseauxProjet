@@ -306,8 +306,8 @@ h3.job{
     width: 350px;
 }
 .about{
-    height: 400px;
-    margin-top: 150px;
+    height: 600px;
+    background-color: rgba(124,36,67,0.4);
 }
 .bloc1{
     margin-top: 5%;
