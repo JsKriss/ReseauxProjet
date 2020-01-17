@@ -85,18 +85,28 @@ header{
 /* ---------------------------------------------------*/
 /* ------- Menu -------*/
 /* ---------------------------------------------------*/
+
+.box_logo {
+    width: 100%;
+    display: inline;
+    float: left;
+    z-index: 3;
+    position: fixed;
+}
+.box_logo img {
+    width: 100px;
+}
 .topnav {
-    background-color: #001033;
+    float: left;
+    background-color: #8b8b8b;
     overflow: hidden;
     position: fixed;
     width: 100%;
     opacity: 0.7;
     z-index: 3;
 }
-.logo{
-    image: url(../img/logo.png);
-    width: 40px;
-}
+
+
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
