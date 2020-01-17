@@ -61,6 +61,13 @@ table {
 .clear {*zoom:1;}
 a{text-decoration:none;}
 
+/* --------------------------------- */
+/* ------- FIN RESET -------*/
+/* --------------------------------- */
+
+/* --------------------------------- */
+/* ------- HEADER -------*/
+/* --------------------------------- */
 header{
     background-image: url(../img/fond-menu.jpg);
     background-size: 150%;
@@ -114,6 +121,11 @@ header{
 .topnav .icon {
     display: none;
 }
+
+/* --------------------------------- */
+/* ------- FIN MENU -------*/
+/* --------------------------------- */
+
 .imageback {
     /* The image used */
     /* Full height */
@@ -155,7 +167,15 @@ header{
     padding: 30px;
     border-radius: 193px;
 }
-/* ------- body -------*/
+
+/* --------------------------------- */
+/* ------- FIN HEADER -------*/
+/* --------------------------------- */
+
+/* --------------------------------- */
+/* ------- BODY -------*/
+/* --------------------------------- */
+
 h2.prenom{
     font-size: 3.8em;
     padding: 20px 0;
@@ -184,10 +204,14 @@ h3.job{
     padding: 5px 10px;
     color: #0f2439;
 }
+
+/* --------------------------------- */
+/* ------- HEZAGONE -------*/
+/* --------------------------------- */
+
 .hexagonemainbefore img:hover{
     opacity: 0.6;
 }
-/* -------- hexagone -------*/
 .hexagone {
     position: relative;
     /* Pour rendre responsive mettre width à 100% */;
@@ -262,12 +286,63 @@ h3.job{
      visibility: hidden;
      overflow: hidden;
  }
-#ex4{
-    background-color: red;
+
+/* --------------------------------- */
+/* ------- FIN EXAGONE -------*/
+/* --------------------------------- */
+
+#ex1,#ex4,#ex3,#ex2{
+    margin-top: 100px;
+    width: 350px;
 }
-#ex1{
-    background-color: red;
+.target{
+    width:100%;
+    height:200px;
+    background:#069;
+    -webkit-transform:skew(-20deg);
+    margin-left: -37px;
+
 }
+.entreprise{
+    width:100%;
+    height:200px;
+    background:#069;
+    -webkit-transform:skew(-20deg);
+    margin-left: 37px;
+    margin-top: 60px;
+}
+.work{
+    width: 100%;
+    height:200px;
+    background:#069;
+    -webkit-transform:skew(-20deg);
+    margin-top: 30px;
+}
+.bloc1{
+    margin-top: 5%;
+   width: 33.33%;
+    float: left;
+}
+.trapG{
+
+    position: absolute;
+    clip:rect(0px,435px,200px,0px);overflow:hidden;
+}
+.trapC{
+    width: 150%;
+    position:relative;width:600px;
+
+}
+.trapD{
+    width: 100%;
+}
+p{
+    color: #ff6f6d;
+}
+/* --------------------------------- */
+/* ------- RESPONSIVE -------*/
+/* --------------------------------- */
+
 @media screen and (max-width: 1275px) {
     .icons{
         width: 153px;
@@ -429,6 +504,11 @@ h3.job{
         text-align: left;
     }
 }
+
+/* --------------------------------- */
+/* ------- FIN RESPONSIVE -------*/
+/* --------------------------------- */
+
 body{
     color: #fff;
     background-color:#f0f0f0;
