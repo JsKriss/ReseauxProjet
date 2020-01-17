@@ -6,7 +6,8 @@ $fichier = file_get_contents('files/trameReseau.json');
 $json = json_decode($fichier, true);
 //debug($json);
 
-require("inc/header.php"); ?>
+require("inc/header.php");
+        if(is_logged()) {?>
 
     <div id="chartContainer1">
         <canvas id="myChart"></canvas>
@@ -40,7 +41,6 @@ require("inc/header.php"); ?>
                         $wd = 0;
                         $autres = 0;
                         $count = count($json);
-                        //        if(is_logged()) {
                         for ($i = 0; $i < $count; $i++) {
                             echo '<tr>';
                             $row = $json[$i]['_source']['layers'];
@@ -87,9 +87,9 @@ require("inc/header.php"); ?>
                             }
                             echo '</tr>';
                         }
-                        //        } else {
-                        //            header('Location: 403.php');
-                        //        }
+                                } else {
+                                   header('Location: 403.php');
+        }
 
                         ?>
                         </tbody>
