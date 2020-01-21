@@ -84,7 +84,7 @@ include('inc/header.php'); ?>
         <div id="register" class="modal">
             <a href="index.php"><i class="fas fa-times-circle"></i></a>
             <h1 id="idh1"  class="register_titlte">Inscription</h1>
-            <form class="form" action="register.php" method="post">
+            <form id="register" class="form" action="register.php" method="post">
 
                 <div class="register_container">
                     <label for="pseudo">Pseudo *</label>
@@ -112,10 +112,13 @@ include('inc/header.php'); ?>
                     <label for="password2">Confirmez votre mot de passe *</label>
                     <input type="password" name="password2" id="password2" value="">
 
+                    <input type="checkbox" required name="terms" id="subscribeCGU"> <!--required car problèmes avec safari-->
+                    <label for="subscribeCGU">J'accepte les Conditions Générales d'Utilisation</label>
+                    <br>
+                    <br>
                     <input type="submit" name="submited" value="Inscrivez-vous">
 
                     <div><img class="img_register_modal" src="assets/img/logo.png"></div>
-
             </form>
         </div>
 
