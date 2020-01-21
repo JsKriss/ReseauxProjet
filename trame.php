@@ -1,14 +1,6 @@
 <?php session_start();
 require './vendor/autoload.php';
 
-use JasonGrimes\Paginator;
-
-$totalItems = 1000;
-$itemsPerPage = 20;
-$currentPage = 0;
-$urlPattern = '/foo/page/(:num)';
-
-$paginator = new Paginator($totalItems, $itemsPerPage, $currentPage, $urlPattern);
 ?>
     <link rel="stylesheet" href="assets/css/table.css">
 <?php
@@ -51,6 +43,8 @@ require("inc/header.php");
                         $apple = 0;
                         $wd = 0;
                         $autres = 0;
+                        $azurewave = 0;
+                        $ubiquiti = 0;
                         $count = count($json);
                         for ($i = 0; $i < $count; $i++) {
                             echo '<tr>';
@@ -70,11 +64,17 @@ require("inc/header.php");
                             if (isset($row['eth'])) {
                                 echo '<td>' . $json[$i]['_source']['layers']['eth']['eth.src'] . '</td>';
                                 echo '<td>' . $json[$i]['_source']['layers']['eth']['eth.dst'] . '</td>';
-                                if ($json[$i]['_source']['layers']['eth']['eth.src_tree']['eth.addr.oui_resolved'] == 'Apple, Inc.') {
+                                if ($json[$i]['_source']['layers']['eth']['eth.src_tree']['eth.src.oui_resolved'] == 'Apple, Inc.') {
                                     $apple++;
-                                } else if ($json[$i]['_source']['layers']['eth']['eth.src_tree']['eth.addr.oui_resolved'] == 'Intel Corporate') {
+                                } elseif ($json[$i]['_source']['layers']['eth']['eth.src_tree']['eth.src.oui_resolved'] == 'Intel Corporate') {
                                     $wd++;
-                                } else {
+                                } elseif($json[$i]['_source']['layers']['eth']['eth.src_tree']['eth.src.oui_resolved'] == 'AzureWave Technology Inc.') {
+                                    $azurewave++;
+                                } elseif($json[$i]['_source']['layers']['eth']['eth.src_tree']['eth.src.oui_resolved'] == 'Ubiquiti Networks Inc.') {
+                                    $ubiquiti++;
+                                }
+
+                                else {
                                     $autres++;
                                 }
                             } else {
@@ -138,19 +138,23 @@ require("inc/header.php");
         var chartMac = new Chart(ctx2, {
             type: 'pie',
             data: {
-                labels: ['Apple', 'Intel', 'Autres'],
+                labels: ['Apple', 'Intel', 'Azurewave', 'Ubiquiti', 'Autres'],
                 datasets: [{
                     label: 'Types de connexions',
-                    data: [<?=$apple?>, <?=$wd?>, <?=$autres?>],
+                    data: [<?=$apple?>, <?=$wd?>, <?= $azurewave ?>, <?=$ubiquiti?> ,<?=$autres?>],
                     backgroundColor: [
                         'rgba(255, 165, 0, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
-                        'rgba(155, 155, 155,0.2)'
+                        'rgba(155, 155, 155,0.2)',
+                        'rgba(255, 0 ,0, 0.2)',
+                        'rgba(40, 250 ,0, 0.2)'
                     ],
                     borderColor: [
                         'rgba(255, 165, 0, 1)',
                         'rgba(54, 162, 235, 1)',
-                        'rgba(155, 155, 155,1)'
+                        'rgba(155, 155, 155,1)',
+                        'rgba(255, 0 ,0, 1)',
+                        'rgba(40, 250 ,0, 1)'
                     ],
 
                     borderWidth: 1
