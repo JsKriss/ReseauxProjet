@@ -6,6 +6,7 @@ include('inc/header.php');
 
 
 ?>
+<section id="factory">
 <div class="about">
     <div class="blocs">
         <h2 class="aboutus">About us</h2>
@@ -33,6 +34,8 @@ include('inc/header.php');
         </div>
     </div>
 </div>
+</section>
+<section id="squad">
 <div class="bloc">
     <div class="wrap">
             <div class="hexagone">
@@ -111,7 +114,7 @@ include('inc/header.php');
         </div>
     </div>
 </div>
-
+</section>
 
 
 

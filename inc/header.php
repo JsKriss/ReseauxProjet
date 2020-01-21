@@ -29,10 +29,10 @@
             </div>
         </ul>
     </nav>
-    <a class="un" href="#">
+    <a class="un" href="#factory">
         <div class="icons"><i class="fas fa-info-circle"></i></div>
     </a>
-    <a class="deux" href="#">
+    <a class="deux" href="#squad">
         <div class="icons"><i class="fas fa-user-tie"></i></div>
     </a>
 
