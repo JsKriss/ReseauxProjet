@@ -58,7 +58,7 @@ include('inc/header.php'); ?>
     <div id="sub-modal" class="modal_form">
         <h1>Modifiez votre mot de passe</h1>
 
-        <form class="" action="" method="post">
+        <form id="formulaires" class="form modif" action="" method="post">
             <label for="password1">Nouveau mot de passe *</label>
             <input type="password" name="password1" id="password1" value="">
             <p class="error"><?php if (!empty($errors['password'])) {
@@ -68,7 +68,7 @@ include('inc/header.php'); ?>
             <label for="password2">Confirmez votre mot de passe *</label>
             <input type="password" name="password2" id="password2" value="">
 
-            <input type="submit" name="submitted" value="Envoyer">
+            <input id="submit" type="submit" name="submitted" value="Envoyer">
         </form>
     </div>
 

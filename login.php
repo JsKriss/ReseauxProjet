@@ -45,7 +45,7 @@ include('inc/header.php'); ?>
 
     <div class="modal_form" id="connexion">
 
-        <h1 id="idh1" class="register_titlte">Connexion</h1>
+        <h1  class="register_titlte">Connexion</h1>
         <form id="connexion" class="form login" action="login.php" method="post">
             <label for="login">Pseudo or email *</label>
             <input type="text" name="login" id="login" value="<?php if (!empty($_POST['login'])) {
@@ -58,10 +58,12 @@ include('inc/header.php'); ?>
             <label for="password">Mot de passe *</label>
             <input type="password" name="password" id="password" value="">
 
-            <input type="submit" name="submited" value="Connexion">
+            <a href="forget_password.php">Mot de passe oublié</a>
+            <div class="divLogoLogin"><img class="img_login_modal" src="assets/img/logo.png"></div>
+            <br>
+            <input id="submit" class="submitlogin" type="submit" name="submited" value="Connexion">
         </form>
-        <a href="forget_password.php">Mot de passe oublié</a>
-        <div><img class="img_register_modal" src="assets/img/logo.png"></div>
+
     </div>
 
 

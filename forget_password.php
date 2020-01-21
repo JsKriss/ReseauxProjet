@@ -32,7 +32,7 @@ include('inc/header.php'); ?>
     <div id="sub-modal" class="modal_form">
         <h1>MDP Oublié</h1>
 
-        <form class="" action="forget_password.php" method="post">
+        <form  class="form forget" action="forget_password.php" method="post">
             <label for="email">Email *</label>
             <input type="text" name="email" value="<?php if (!empty($_POST['email'])) {
                 echo $_POST['email'];
@@ -41,7 +41,7 @@ include('inc/header.php'); ?>
                     echo $errors['email'];
                 } ?></p>
 
-            <input type="submit" name="submitted" value="Envoyer">
+            <input id="submit" type="submit" name="submitted" value="Envoyer">
         </form>
     </div>
 

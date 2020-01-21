@@ -11,17 +11,22 @@ function myFunction() {
 $(document).ready(function(){
 
 // modal register
-$("#register").modal({
+/*$("#register").modal({
     escapeClose: false,
     clickClose: false,
     showClose: false
 
-});
+});*/
 // modal login
 $("#connexion").modal({
     fadeDuration: 250,
     fadeDelay: 1.50 // Will fade in 750ms after the overlay finishes.
 });
+$("#register").modal({
+    fadeDuration: 250,
+    fadeDelay: 1.50 // Will fade in 750ms after the overlay finishes.
+});
+
 // modal forgotpassword & modal modifpassword
     $('#sub-modal').modal({
         closeExisting: false

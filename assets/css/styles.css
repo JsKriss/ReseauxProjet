@@ -65,6 +65,15 @@ a{text-decoration:none;}
 /* ------- FIN RESET -------*/
 /* --------------------------------- */
 
+
+/* --------------------------------- */
+/* ------- FONT -------*/
+/* --------------------------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 /* --------------------------------- */
 /* ------- HEADER -------*/
 /* --------------------------------- */
@@ -597,6 +606,8 @@ h1 {
     font-size: 2em;
     margin: .67em 0;
     display: block;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 #registered {
@@ -669,17 +680,7 @@ input[type="email"]
     background-color: #181f2b;
     color: black;
     box-sizing: border-box;
-    border-radius: 2px;
-}
-
-
-select:hover,
-textarea:hover,
-input[type="text"]:hover,
-input[type="password"]:hover,
-input[type="email"]:hover {
-    background-color: rgba(0, 0, 0, 0.07);
-    color: black;
+    border-radius: 5px;
 }
 
 .register_titlte{
@@ -703,16 +704,41 @@ p.error{
 }
 div#register.modal{
     margin-bottom: 10px;
+    margin-top: 70px;
 }
 div#connexion.modal_form.modal{
     margin-bottom: 100px;
-    height: 60%;
-
+    height: 62%;
 }
 form#connexion.form.login{
     margin-top: 32px;
+}
+#submit {
+    background-color: #0f2439;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
 
 }
+#submit:hover {
+    transform: scale(1.05);
+}
+.img_login_modal{
+    background-image: url(../img/logo.png);
+    max-width: 30%;
+    float: right;
+    margin-left: 10px;
+}
+
+
+
+
 footer{
     background-color: red;
 }
