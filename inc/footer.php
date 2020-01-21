@@ -1,5 +1,7 @@
+<div id="clear"></div>
 <footer>
-    <a href="mentions_legales.php">Mentions Légales</a>
+    <!--ATTENTION A BIEN SEPARER DES AUTRES SECTIONS-->
+    <!--<p>Lire nos <a href="mentions_legales.php">Mentions légales</a></p>-->
 
     <script
             src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -17,6 +19,7 @@
     <script src="assets/js/jquery.modal.js"></script>
     <script src="assets/js/jquery.modal.min.js"></script>
     <script src="assets/js/main.js"></script>
+
 
 </footer>
 </body>

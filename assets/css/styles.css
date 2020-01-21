@@ -654,6 +654,7 @@ p.error{
 }
 div#register.modal{
     margin-bottom: 10px;
+    margin-top: 90px;
 }
 div#connexion.modal_form.modal{
     margin-bottom: 100px;
@@ -664,6 +665,7 @@ form#connexion.form.login{
     margin-top: 32px;
 
 }
+
 
 
 

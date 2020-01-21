@@ -71,3 +71,4 @@ function is_logged()
     }
     return false;
 }
+
