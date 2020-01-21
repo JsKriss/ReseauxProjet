@@ -1,4 +1,3 @@
-$(document).ready(function(){
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -7,6 +6,10 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+
+$(document).ready(function(){
+
 // modal register
 $("#register").modal({
     escapeClose: false,

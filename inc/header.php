@@ -13,14 +13,10 @@
 <body>
 <?php // var_dump($_SESSION);  ?>
 <header class="header_accueil">
-    <div class="box_logo">
-        <a href=""><img src="assets/img/logo.png" alt=""></a>
-    </div>
     <nav class="topnav" id="myTopnav">
         <ul>
+            <li><a class="logo2" href="index.php"><img class="logo" src="assets/img/logo.png" alt=""></a></li>
             <li><a href="index.php" class="active">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
             <?php if (!is_logged()) { ?>
                 <li><a href="login.php">Connexion</a></li>
                 <li><a href="register.php">Inscription</a></li>
@@ -39,7 +35,5 @@
     <a class="deux" href="#">
         <div class="icons"><i class="fas fa-user-tie"></i></div>
     </a>
-    <a class="trois" href="#">
-        <div class="icons"><i class="fas fa-comments"></i></div>
-    </a>
+
 </header>

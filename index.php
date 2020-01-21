@@ -6,6 +6,33 @@ include('inc/header.php');
 
 
 ?>
+<div class="about">
+    <div class="blocs">
+        <h2 class="aboutus">About us</h2>
+        <h3>NetScan</h3>
+    </div>
+    <div class="blocs">
+        <div class="bar">
+        </div>
+    </div>
+    <div class="blocs">
+        <div class="bloc1">
+            <div>
+                <p class="text"> <img class="target" src="assets/img/target.png"> </p>
+            </div>
+        </div>
+        <div class="bloc1">
+            <div >
+                <p class="text"> <img class="work" src="assets/img/reseau.png"> </p>
+            </div>
+        </div>
+        <div class="bloc1">
+            <div >
+                <p class="text"> <img class="entreprise" src="assets/img/societe.png"> </p>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="bloc">
     <div class="wrap">
             <div class="hexagone">
@@ -84,32 +111,7 @@ include('inc/header.php');
         </div>
     </div>
 </div>
-<div class="about">
-    <div class="blocs">
-     <h2 class="aboutus">About us</h2>
-    </div>
-    <div class="blocs">
-        <div class="bar">
-        </div>
-    </div>
-    <div class="blocs">
-        <div class="bloc1">
-            <div>
-                <p class="text"> <img class="target" src="assets/img/target.png"> </p>
-            </div>
-        </div>
-        <div class="bloc1">
-            <div >
-                <p class="text"> <img class="work" src="assets/img/reseau.png"> </p>
-            </div>
-        </div>
-        <div class="bloc1">
-            <div >
-             <p class="text"> <img class="entreprise" src="assets/img/societe.png"> </p>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 
 
