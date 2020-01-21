@@ -1,6 +1,4 @@
 <?php session_start();
-require './vendor/autoload.php';
-
 ?>
     <link rel="stylesheet" href="assets/css/table.css">
 <?php
@@ -131,7 +129,12 @@ require("inc/header.php");
                     borderWidth: 1
                 }]
             },
-            options: {}
+            options: {
+                title: {
+                    display: true,
+                    text: 'Type de protocole',
+                }
+            }
         });
 
         var ctx2 = document.getElementById('chartMac').getContext('2d');
@@ -160,7 +163,12 @@ require("inc/header.php");
                     borderWidth: 1
                 }]
             },
-            options: {}
+            options: {
+                title: {
+                    display: true,
+                    text: 'Constructeur de la carte réseau de l\'appareil',
+                }
+            }
         });
 
     </script>
