@@ -21,7 +21,7 @@ include('../inc/function.php');
 $title = 'show users';
 
 $sql = "SELECT * FROM users
-        WHERE actif = '1' AND role = 'user'";
+        WHERE actif = '0'";
 
 
 $query = $pdo->prepare($sql);
@@ -103,23 +103,22 @@ debug($users); ?>
                             <th>Email</th>
                             <th>Rôle</th>
                             <th>Date de création</th>
-                            <th>Edit</th>
-                            <th>Supprimer</th>
+                            <th>Approuver</th>
                         </tr>
                         </thead>
                         <tbody>
 
-                        <?php foreach ($users as $user) { ?>
-                            <tr class="success">
-                                <td><?php echo $user['id'] ?></td>
-                                <td><?php echo $user['pseudo'] ?></td>
-                                <td><?php echo $user['email'] ?></td>
-                                <td><?php echo $user['role'] ?></td>
-                                <td><?php echo $user['created_at'] ?></td>
-                                <td><a href="" id="editAdmin">Edit</a></td>
-                                <td><a href="backDeleteUser.php?t=<?php echo $user['token']; ?>">Supprimer</a></td>
-                            </tr>
-                        <?php } ?>
+                        <?php foreach ($users as $user) {
+                            if($user['actif'] == '0') {?>
+                                <tr class="success">
+                                    <td><?php echo $user['id'] ?></td>
+                                    <td><?php echo $user['pseudo'] ?></td>
+                                    <td><?php echo $user['email'] ?></td>
+                                    <td><?php echo $user['role'] ?></td>
+                                    <td><?php echo $user['created_at'] ?></td>
+                                    <td><a href="backRestoreUser.php?t=<?php echo $user['token']; ?>">Restaurer</a></td>
+                                </tr>
+                            <?php } } ?>
                         </tbody>
                     </table>
                 </div>
@@ -163,6 +162,8 @@ debug($users); ?>
 
 </body>
 </html>
+
+
 
 
 

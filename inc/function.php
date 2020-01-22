@@ -72,3 +72,28 @@ function is_logged()
     return false;
 }
 
+function approveUser($token) {
+    include('pdo.php');
+    $sql = "UPDATE users SET role = 'user' WHERE users.token = :token";
+    $query = $pdo->prepare($sql);
+    $query->bindValue(':token', $token, PDO::PARAM_STR);
+    $query->execute();
+}
+
+
+function deleteUser($token)
+{
+    include('pdo.php');
+    $sql = "UPDATE users SET actif = '0' WHERE users.token = :token";
+    $query = $pdo->prepare($sql);
+    $query->bindValue(':token', $token, PDO::PARAM_STR);
+    $query->execute();
+}
+
+function restoreUser($token) {
+    include('pdo.php');
+    $sql = "UPDATE users SET actif = '1' WHERE users.token = :token";
+    $query = $pdo->prepare($sql);
+    $query->bindValue(':token', $token, PDO::PARAM_STR);
+    $query->execute();
+}

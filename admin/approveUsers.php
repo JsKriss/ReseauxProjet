@@ -21,7 +21,7 @@ include('../inc/function.php');
 $title = 'show users';
 
 $sql = "SELECT * FROM users
-        WHERE actif = '1' AND role = 'user'";
+        WHERE role = 'newuser'";
 
 
 $query = $pdo->prepare($sql);
@@ -103,23 +103,22 @@ debug($users); ?>
                             <th>Email</th>
                             <th>Rôle</th>
                             <th>Date de création</th>
-                            <th>Edit</th>
-                            <th>Supprimer</th>
+                            <th>Approuver</th>
                         </tr>
                         </thead>
                         <tbody>
 
-                        <?php foreach ($users as $user) { ?>
+                        <?php foreach ($users as $user) {
+                            if($user['role'] == 'newuser') {?>
                             <tr class="success">
                                 <td><?php echo $user['id'] ?></td>
                                 <td><?php echo $user['pseudo'] ?></td>
                                 <td><?php echo $user['email'] ?></td>
                                 <td><?php echo $user['role'] ?></td>
                                 <td><?php echo $user['created_at'] ?></td>
-                                <td><a href="" id="editAdmin">Edit</a></td>
-                                <td><a href="backDeleteUser.php?t=<?php echo $user['token']; ?>">Supprimer</a></td>
+                                <td><a href="backApproveUser.php?t=<?php echo $user['token']; ?>" id="approve">Approuver</a></td>
                             </tr>
-                        <?php } ?>
+                        <?php } } ?>
                         </tbody>
                     </table>
                 </div>
@@ -163,6 +162,7 @@ debug($users); ?>
 
 </body>
 </html>
+
 
 
 

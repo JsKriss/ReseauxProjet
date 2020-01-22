@@ -5,8 +5,8 @@ include('../inc/function.php');
 
 if (!empty($_GET['t'])){
     $token = $_GET['t'];
-    deleteUser($token);
-    header("Location: manageUsers.php");
+    approveUser($token);
+    header("Location: approveUsers.php");
 } else {
     header("Location: ../403.php");
 }
