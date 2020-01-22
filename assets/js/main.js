@@ -21,13 +21,6 @@ ScrollReveal().reveal('.text3', { delay: 2000 });
 
 $(document).ready(function(){
 
-// modal register
-/*$("#register").modal({
-    escapeClose: false,
-    clickClose: false,
-    showClose: false
-
-});*/
 // modal login
 $("#connexion").modal({
     fadeDuration: 250,
@@ -64,7 +57,7 @@ window.addEventListener("DOMContentLoaded", function(e) {
     var myForm = document.getElementById("register");
     var checkForm = function(e) {
         if(!this.terms.checked) {
-            alert("Please indicate that you accept the Terms and Conditions");
+            alert("Merci d'indiquer que vous acceptez nos Conditions Générales d'Utilisation.");
             this.terms.focus();
             e.preventDefault(); // equivalent to return false
             return;

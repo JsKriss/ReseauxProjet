@@ -16,24 +16,25 @@ if(!empty($_POST['submitted'])) {
   if(!empty($user)) {
     $token = $user['token'];
     $email = urlencode($email);
-    $html = '<div id="sub-modal" class="modal_form"><a href="modif-password.php?email='.$email.'&token='.$token.'">Modification de mot de passe : Redirection ... (à condition de cliquer).</a></div>';
+    $html = '<div id="sub-modal" class="modal_form transition"><p>Veuillez cliquer sur lien pour changer de mot de passe : <a href="modif-password.php?email='.$email.'&token='.$token.'">REDIRECTION</a></p></div>';
     echo $html;
 
 
     //mail
     // $html
   } else {
-    $errors['email'] = 'error !';
+    $errors['email'] = 'Veuillez rentrer un email valide !';
   }
 } //fin
 
 include('inc/header.php'); ?>
 
-    <div id="sub-modal" class="modal_form">
+    <div id="sub-modal" class="forgetMDP">
         <h1>MDP Oublié</h1>
 
         <form  class="form forget" action="forget_password.php" method="post">
-            <label for="email">Email *</label>
+            <p class="label"><label for="email">Email *</label></p>
+            <br>
             <input type="text" name="email" value="<?php if (!empty($_POST['email'])) {
                 echo $_POST['email'];
             } ?>">

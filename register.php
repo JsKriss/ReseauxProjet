@@ -82,7 +82,7 @@ include('inc/header.php'); ?>
 
 
         <div id="register" class="modal">
-            <h1  class="register_titlte">Inscription</h1>
+            <h1  class="register_title">Inscription</h1>
             <form id="register" class="form register" action="register.php" method="post">
 
                 <div class="register_container">

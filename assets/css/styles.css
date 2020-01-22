@@ -337,10 +337,6 @@ h3{
     margin-top: 50px;
     padding: 20px 0;
 }
-p{
-    color: black;
-    text-align: center;
-}
 .target,.entreprise,.work{
     width: 50%;
 }
@@ -383,7 +379,6 @@ p{
         color: cadetblue;
         margin-left: 5px;
     }
-
 }
 @media screen and (max-width: 1080px) {
     .icons{
@@ -516,8 +511,6 @@ body{
     color: black;
 
 }
-
-
 h1 {
     font-size: 2em;
     margin: .67em 0;
@@ -525,7 +518,6 @@ h1 {
     text-transform: uppercase;
     text-align: center;
 }
-
 #registered {
     margin-top: 50px;
 }
@@ -540,23 +532,18 @@ h1 {
     width:450px;
     margin-left:auto;
     margin-right:auto;
-
 }
-
 .user {
     color: #66d8fc;
     font-weight: bold;
 }
-
 .userlist {
     float:left;
     padding: 30px;
 }
-
 .userlist span {
     color: #0590fc;
 }
-
 .welcome{
     position:relative;
     top:30%;
@@ -578,12 +565,11 @@ h1 {
 }
 
 select,
-textarea,
+textarea[type="text"],
 input[type="text"],
 input[type="password"],
 input[type="email"]
 {
-    height:30px;
     width:100%;;
     display: inline-block;
     vertical-align: middle;
@@ -593,17 +579,16 @@ input[type="email"]
     margin-bottom: 10px;
     font-size: 15px;
     line-height: 20px;
-    background-color: #181f2b;
     color: black;
     box-sizing: border-box;
     border-radius: 5px;
 }
 input:focus {
     outline: none !important;
-    border-color: #0F2439;;
+    border-color: #0F2439;
 }
 
-.register_titlte{
+.register_title{
     text-align: center;
 }
 
@@ -626,12 +611,15 @@ div#register.modal{
     margin-bottom: 10px;
     margin-top: 70px;
 }
-div#connexion.modal_form.modal{
+div#connexion.modal_form.modal {
     margin-bottom: 100px;
     height: 62%;
 }
 form#connexion.form.login{
     margin-top: 32px;
+}
+.connexion {
+    height: 470px;
 }
 #submit {
     background-color: #0f2439;
@@ -674,6 +662,31 @@ form#connexion.form.login{
 .forget a {
     color: #0F2439;
 }
+.forgetMDP {
+    height: 245px;
+}
+label {
+    display: block;
+    text-align: left;
+    color: #0F2439;
+    font-size: 1.3em;
+}
+/*DIV TRANSITION DU FORGET PASSWORD*/
+#sub-modal {
+    width: 325px;
+}
+.transition {
+    height: 65px;
+}
+/*FORMULAIRE CONTACT*/
+textarea:focus {
+    outline: none !important;
+    border-color: #0F2439;
+}
+
+
+/*FIN DES FORMULAIRES*/
+
 
 .infos{
     padding: 6px 0;

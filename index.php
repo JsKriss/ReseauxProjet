@@ -121,6 +121,74 @@ include('inc/header.php');
 </div>
 </section>
 
+<!--SECTION CONTACT-->
+<?php
+// Traitement PHP
+$errors = array();
+$success = false;
+if(!empty($_POST['submit'])) {
+$nom   = clean($_POST['nom']);
+$prenom = clean($_POST['prenom']);
+$email   = clean($_POST['email']);
+$message = clean($_POST['message']);
+// Validation
+$errors = textValid($errors,$nom,'nom',3,155);
+$errors = textValid($errors,$prenom,'prenom',3,155);
+$errors = emailValidation($errors,$email,'email');
+$errors = textValid($errors,$message,'message',5,2000);
+if(count($errors) == 0) {
+// insert avec protection des injections SQL
+$sql = "INSERT INTO contact VALUES (null,:ctc_nom,:ctc_prenom,:ctc_email,:ctc_message,NOW())";
+$query = $pdo->prepare($sql);
+$query->bindValue(':ctc_nom',$nom,PDO::PARAM_STR);
+$query->bindValue(':ctc_prenom',$prenom,PDO::PARAM_STR);
+$query->bindValue(':ctc_email',$email,PDO::PARAM_STR);
+$query->bindValue(':ctc_message',$message,PDO::PARAM_STR);
+$query->execute();
+
+$success = true;
+}
+} ?>
+
+
+<section id="contact">
+    <div class="wrap2">
+        <h2 class="register_title">Contact</h2>
+        <p class="textintro">Si vous avez des questions relatives à l'utilsation du site :</p>
+
+        <?php if($success) { ?>
+            <p class="success">Merci pour votre message.</p>
+        <?php } else  { ?>
+        <form class="form contact" action="#" method="post">
+            <div class="w50">
+                <label for="nom">Votre Nom</label>
+                <input class="inputerror" type="text" name="nom" value="<?php if(!empty($_POST['nom'])) { echo $_POST['nom']; } ?>" placeholder="Ex: Doe">
+                <p class="error"><?php if(!empty($errors['nom'])) {echo $errors['nom'];} ?></p>
+            </div>
+            <div class="w50">
+                <label for="prenom">Votre Prenom</label>
+                <input class="inputerror" type="text" name="prenom" value="<?php if(!empty($_POST['prenom'])) { echo $_POST['prenom']; } ?>" placeholder="Ex: John">
+                <p class="error"><?php if(!empty($errors['prenom'])) {echo $errors['prenom'];} ?></p>
+            </div>
+
+            <div class="w50">
+                <label for="email">Votre Email</label>
+                <input type="email" name="email" value="<?php if(!empty($_POST['email'])) { echo $_POST['email']; } ?>" placeholder="Ex: johndoe@gmail.com">
+                <p class="error"><?php if(!empty($errors['email'])) {echo $errors['email'];} ?></p>
+            </div>
+
+            <div class="w100">
+                <label for="message">Votre Message</label>
+                <textarea type="text" name="message" rows="8" cols="80" placeholder="Bonjour"><?php if(!empty($_POST['message'])) { echo $_POST['message']; } ?></textarea>
+                <p class="error"><?php if(!empty($errors['message'])) {echo $errors['message'];} ?></p>
+            </div>
+
+            <input type="submit" name="submit" value="Envoyer">
+        </form>
+        <?php } ?>
+    </div>
+</section>
+
 
 
 

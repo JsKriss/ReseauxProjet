@@ -55,7 +55,7 @@ if (!empty($_GET['token']) && !empty($_GET['email'])) {
 
 include('inc/header.php'); ?>
 
-    <div id="sub-modal" class="modal_form">
+    <div id="sub-modal" class="changeMDP">
         <h1>Modifiez votre mot de passe</h1>
 
         <form id="formulaires" class="form modif" action="" method="post">
