@@ -13,23 +13,28 @@ include('inc/header.php');
         <h3>NetScan</h3>
     </div>
     <div class="blocs">
-        <div class="bar">
-        </div>
-    </div>
-    <div class="blocs">
         <div class="bloc1">
             <div>
-                <p class="text"> <img class="target" src="assets/img/target.png"> </p>
+                <p class="text1"> <img class="icon_about" src="assets/img/target.png"></p>
+                <p class="text1"> NetScan est accessible a toutes et à tous. Inscription facile et rapide </p>
+            </div>
+        </div>
+        <div class="bloc1">
+            <div>
+                <p class="text2"> <img class="icon_about" src="assets/img/utilisateur.png"></p>
+                <p class="text2"> NetScan est un analyseur de paquets libre et gratuit. </p>
             </div>
         </div>
         <div class="bloc1">
             <div >
-                <p class="text"> <img class="work" src="assets/img/reseau.png"> </p>
-            </div>
-        </div>
-        <div class="bloc1">
-            <div >
-                <p class="text"> <img class="entreprise" src="assets/img/societe.png"> </p>
+                <div class="text3">
+                    <p class="text3"> <img class="icon_about" src="assets/img/societe.png"></p>
+                    <p>Fonctionnalité :</p>
+                <ul>
+                    <li>Annalyse de capture tram réseau</li>
+                    <li>Sortir des statistics sur la tram</li>
+                    <li>hfbvfvbf</li>
+                </ul></div>
             </div>
         </div>
     </div>

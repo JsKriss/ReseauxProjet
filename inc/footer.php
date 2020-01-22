@@ -39,6 +39,8 @@
     <script src="assets/js/jquery.fittext.js"></script>
     <script src="assets/js/jquery.modal.js"></script>
     <script src="assets/js/jquery.modal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="assets/js/main.js"></script>
 
 
