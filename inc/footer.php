@@ -1,4 +1,4 @@
-<div id="clear"></div>
+<div class="clear"></div>
 <footer>
     <div class="wrap2">
     <!--ATTENTION A BIEN SEPARER DES AUTRES SECTIONS-->

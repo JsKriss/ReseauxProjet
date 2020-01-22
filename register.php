@@ -118,6 +118,7 @@ include('inc/header.php'); ?>
                     <input id="submit" type="submit" name="submited" value="Inscrivez-vous">
 
                     <div><img class="img_register_modal" src="assets/img/logo.png"></div>
+                </div>
             </form>
         </div>
 
