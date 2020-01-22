@@ -1,22 +1,27 @@
 <div class="clear"></div>
 <footer>
-    <div class="wrap2">
-    <!--ATTENTION A BIEN SEPARER DES AUTRES SECTIONS-->
-    <p>Lire nos <a href="mentions_legales.php">Mentions légales</a></p>
-
-
-    <div class="sociaux">
-        <ul>
-            <li> <a href="#"><img width="30px" src="assets/img/social_facebook_box_blue_256_30649.png"></a></li>
-            <li> <a href="#"> <img width="30px" src="assets/img/social-twitter-icon_34350.png">  </a></li>
-            <li> <a href="#"> <img width="30px" src="assets/img/instagram_socialnetwork_22374.png"> </a></li>
-        </ul>
-    </div>
-        <div class="time">
-            <div id="jour"></div>
+    <div class="footeur">
+        <div class="wrap2">
+            <div class="bloc_foot">
+                <div class="sociaux">
+                    <ul>
+                     <li> <a href="#"><img class="r_sociaux" src="assets/img/social_facebook_box_blue_256_30649.png"></a></li>
+                     <li> <a href="#"> <img class="r_sociaux" src="assets/img/social-twitter-icon_34350.png">  </a></li>
+                    <li> <a href="#"> <img class="r_sociaux" src="assets/img/instagram_socialnetwork_22374.png"> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bloc_foot">
+                <p class="mentions">Lire nos <a href="mentions_legales.php">Mentions légales</a></p>
+            </div>
+            <div class="bloc_foot">
+                <p class="infos">NetScan</p>
+                <p class="infos">24 place Saint-Marc, 76000 ROUEN</p>
+            </div>
+            <div class="bloc_foot">
+                <div><img class="logo3" src="assets/img/logo.png"></div>
+            </div>
         </div>
-
-
     </div>
 
     <script

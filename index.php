@@ -41,21 +41,21 @@ include('inc/header.php');
             <div class="hexagone">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
-                        <a href="#ex1" rel="modal:open">      <img src="assets/img/personnes.jpg" alt="">  </a>
+                        <a href="#ex1" rel="modal:open">      <img src="assets/img/pierre.jpg" alt="">  </a>
                     </div>
                 </div>
             </div>
             <div class="hexagone2">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
-                        <a href="#ex2" rel="modal:open">   <img class="portrait" src="assets/img/yann.jpg" alt=""> </a>
+                        <a href="#ex2" rel="modal:open">   <img class="portrait" src="assets/img/yann copie.jpg" alt=""> </a>
                     </div>
                 </div>
             </div>
             <div class="hexagone2">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
-                        <a href="#ex3" rel="modal:open">  <img class="portrait" src="assets/img/personnes.jpg" alt=""> </a>
+                        <a href="#ex3" rel="modal:open">  <img class="portrait" src="assets/img/kris.jpg" alt=""> </a>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@ include('inc/header.php');
 
     <!-- Link to open the modal -->
     <div id="ex1" class="modal">
-        <img class="portrait" src="assets/img/personnes.jpg" alt="">
+        <img class="portrait" src="assets/img/pierre.jpg" alt="">
         <div class="presentation">
             <h2 class="prenom">Pierre</h2>
             <h3 class="job">Responsable de Projet</h3>
@@ -81,7 +81,7 @@ include('inc/header.php');
         </div>
     </div>
     <div id="ex2" class="modal">
-        <img class="portrait" src="assets/img/yann.jpg" alt="">
+        <img class="portrait" src="assets/img/yann copie.jpg" alt="">
         <div class="presentation">
             <h2 class="prenom">Yann</h2>
             <h3 class="job">Développeur</h3>
@@ -92,7 +92,7 @@ include('inc/header.php');
         </div>
     </div>
     <div id="ex3" class="modal">
-        <img class="portrait" src="assets/img/personnes.jpg" alt="">
+        <img class="portrait" src="assets/img/kris.jpg" alt="">
         <div class="presentation">
             <h2 class="prenom">Christopher</h2>
             <h3 class="job">Développeur</h3>
