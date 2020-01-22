@@ -704,6 +704,7 @@ textarea:focus {
 .footeur{
     height: 83px;
     background-color: #BFB9B9;
+    margin-top: 22px;
 }
 .titre_main_cgu{
     text-align: center;
