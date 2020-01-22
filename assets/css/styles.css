@@ -677,10 +677,13 @@ input[type="email"]
     margin-bottom: 10px;
     font-size: 15px;
     line-height: 20px;
-    background-color: #181f2b;
     color: black;
     box-sizing: border-box;
     border-radius: 5px;
+}
+input:focus {
+    outline: none !important;
+    border-color: #0F2439;;
 }
 
 .register_titlte{
@@ -736,6 +739,14 @@ form#connexion.form.login{
     margin-left: -125px;
     margin-top: 30px;
     margin-right: -20px;
+}
+.forget {
+    text-align: right;
+    font-size: 0.7em;
+
+}
+.forget a {
+    color: #0F2439;
 }
 
 

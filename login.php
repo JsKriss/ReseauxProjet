@@ -58,7 +58,9 @@ include('inc/header.php'); ?>
             <label for="password">Mot de passe *</label>
             <input type="password" name="password" id="password" value="">
 
-            <a href="forget_password.php">Mot de passe oublié</a>
+            <p class="forget register"><a href="register.php">Pas de compte NetScan ? Créez-le maintenant !</a></p>
+            <br>
+            <p class="forget mdp"><a href="forget_password.php">Mot de passe oublié</a></p>
             <div class="divLogoLogin"><img class="img_login_modal" src="assets/img/logo.png"></div>
             <br>
             <input id="submit" class="submitlogin" type="submit" name="submited" value="Connexion">
