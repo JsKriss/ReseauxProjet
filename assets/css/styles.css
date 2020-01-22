@@ -318,7 +318,7 @@ h3{
     width: 350px;
 }
 .about{
-    height: 600px;
+    height: 100%;
     background: rgb(32,36,45);
     background: radial-gradient(circle, rgba(32,36,45,1) 0%, rgba(5,57,59,1) 100%);
 }
@@ -329,13 +329,12 @@ h3{
     margin-left: 15%;
 }
 .blocs{
-    width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     float: left;
-    height: 540px;
-    margin-top: 50px;
-    padding: 20px 0;
+    margin-top: 10px;
+    padding: 5px 0;
 }
 .target,.entreprise,.work{
     width: 50%;
@@ -343,6 +342,12 @@ h3{
 .text1,.text2,.text3{
     padding: 5px 1px;
     text-align: center;
+    color: #59636d;
+    font-size: 2vw;
+}
+.tache{
+    text-align: left;
+    padding: 5px 1px;
 }
 .icon_about{
     width: 40px;
@@ -350,7 +355,7 @@ h3{
 }
 .aboutus{
     text-align: center;
-    margin-top: 70px;
+    margin-top: 100px;
     font-size: 7.5vw;
     padding: 20px;
     margin-left: 50px;
@@ -430,6 +435,15 @@ h3{
     .aboutus{
         margin-top: 90px;
     }
+    .topnav a {
+        padding: 5px 40px;
+        font-size: 2.5vw;
+        margin-top: 15px;
+    }
+    .topnav a.active {
+        color: white;
+        margin-left: 8%;
+    }
 }
 @media screen and (max-width: 790px) {
     .icons{
@@ -453,6 +467,10 @@ h3{
     }
     .aboutus{
         margin-top: 70px;
+    }
+    .topnav a.active {
+        color: white;
+        margin-left: 2%;
     }
 }
 @media screen and (max-width: 700px) {
@@ -484,22 +502,24 @@ h3{
     .aboutus{
         margin-top: 50px;
     }
+    .topnav a {
+        padding: 5px 35px;
+        font-size: 2.5vw;
+        margin-top: 15px;
+    }
+    .topnav a.active {
+        color: white;
+        margin-left: 0%;
+    }
 }
 @media screen and (max-width: 600px) {
     .aboutus{
         margin-top: 30px;
     }
-    .topnav a {
-        padding: 5px 18px;
-    }
 }
 @media screen and (max-width: 550px) {
     .aboutus{
         margin-top: 10px;
-    }
-    .topnav a {
-        padding: 5px 17px;
-        font-size: 25px;
     }
 }
 
@@ -699,7 +719,9 @@ textarea:focus {
     margin-top: 25px;
 }
 .r_sociaux{
-    width: 19px;
+    width: 22%;
+    float: left;
+    margin: 15px 9px 0 0;
 }
 .footeur{
     height: 83px;

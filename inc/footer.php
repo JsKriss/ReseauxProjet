@@ -4,11 +4,9 @@
         <div class="wrap2">
             <div class="bloc_foot">
                 <div class="sociaux">
-                    <ul>
-                     <li> <a href="#"><img class="r_sociaux" src="assets/img/social_facebook_box_blue_256_30649.png"></a></li>
-                     <li> <a href="#"> <img class="r_sociaux" src="assets/img/social-twitter-icon_34350.png">  </a></li>
-                    <li> <a href="#"> <img class="r_sociaux" src="assets/img/instagram_socialnetwork_22374.png"> </a></li>
-                    </ul>
+                     <div> <a href="#"><img class="r_sociaux" src="assets/img/social_facebook_box_blue_256_30649.png"></a></div>
+                     <div> <a href="#"><img class="r_sociaux" src="assets/img/social-twitter-icon_34350.png"></a></div>
+                     <div> <a href="#"><img class="r_sociaux" src="assets/img/instagram_socialnetwork_22374.png"></a></div>
                 </div>
             </div>
             <div class="bloc_foot">

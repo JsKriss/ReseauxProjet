@@ -10,7 +10,7 @@ include('inc/header.php');
 <div class="about">
     <div class="blocs">
         <h2 class="aboutus">About us</h2>
-        <h3>NetScan</h3>
+        <h3 class="sub_title">NetScan</h3>
     </div>
     <div class="blocs">
         <div class="bloc1">
@@ -31,8 +31,9 @@ include('inc/header.php');
                     <p class="text3"> <img class="icon_about" src="assets/img/societe.png"></p>
                     <p>Fonctionnalité :</p>
                 <ul>
-                    <li>Annalyse de capture tram réseau</li>
-                    <li>Sortir des statistics sur la trame</li>
+                    <li class="tache">Annalyse de capture tram réseau</li>
+                    <li class="tache">Sortir des statistics sur la tram</li>
+                    <li class="tache">hfbvfvbf</li>
                 </ul></div>
             </div>
         </div>

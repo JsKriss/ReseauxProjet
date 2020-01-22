@@ -13,6 +13,13 @@ ScrollReveal().reveal('.aboutus', {
     },
     delay: 2000
 });
+ScrollReveal().reveal('.sub_title', {
+    rotate: {
+        x: 120,
+        y: 220
+    },
+    delay: 2500
+});
 ScrollReveal().reveal('.text1', { delay: 1000 });
 ScrollReveal().reveal('.text2', { delay: 1500 });
 ScrollReveal().reveal('.text3', { delay: 2000 });
