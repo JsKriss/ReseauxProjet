@@ -30,7 +30,7 @@ if(!empty($_POST['submitted'])) {
 include('inc/header.php'); ?>
 
     <div id="sub-modal" class="forgetMDP">
-        <h1>MDP Oublié</h1>
+        <h1>Mot de passe oublié</h1>
 
         <form  class="form forget" action="forget_password.php" method="post">
             <p class="label"><label for="email">Email *</label></p>

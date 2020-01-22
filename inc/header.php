@@ -19,7 +19,7 @@
     <nav class="topnav" id="myTopnav">
         <ul>
             <li><a class="logo2" href="index.php"><img class="logo" src="assets/img/logo.png" alt=""></a></li>
-            <li><a href="index.php" class="active">Home</a></li>
+            <li><a href="index.php" class="active" >Home</a></li>
             <?php if (!is_logged()) { ?>
                 <li><a href="login.php">Connexion</a></li>
                 <li><a href="register.php">Inscription</a></li>
