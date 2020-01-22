@@ -749,9 +749,6 @@ form#connexion.form.login{
     color: #0F2439;
 }
 
-
-
-
 footer{
     background-color: red;
 }
@@ -761,6 +758,7 @@ footer{
 .titre_second_cgu{
     font-weight: bold;
     margin-top: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 .wrap3{
@@ -769,9 +767,23 @@ footer{
     margin: 0 auto;
 }
 .list_cgu{
-
     line-height: 25px;
     writing-mode: horizontal-tb;
 }
+.cgu_section2{
+
+}
+.p_height{
+    text-align: center;
+line-height: 28px;
+    justify-content: left;
+}
+.back_cgu{
+    background-image: url(../img/back_about.jp);
+    background-color: blue;
+    display: inline-block;
+
+}
+
 
 
