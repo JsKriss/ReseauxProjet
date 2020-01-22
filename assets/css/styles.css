@@ -749,9 +749,6 @@ form#connexion.form.login{
     color: #0F2439;
 }
 
-footer{
-    background-color: red;
-}
 .infos{
     padding: 6px 0;
     text-align: center;
@@ -787,18 +784,23 @@ footer{
     line-height: 25px;
     writing-mode: horizontal-tb;
 }
-.cgu_section2{
 
-}
-.p_height{
+.interline-height{
     text-align: center;
-line-height: 28px;
-    justify-content: left;
+    line-height: 28px;
+    justify-content: normal;
+    background-color: red;
 }
 .back_cgu{
-    background-image: url(../img/back_about.jp);
+    background-image: url(../img/test.jpg);
     background-color: blue;
     display: inline-block;
+    opacity: 0.8;
+}
+.wrap li{
+    line-height: 30px;
+    background-color: #2a6496;
+    list-style-type: disc   ;
 
 }
 
