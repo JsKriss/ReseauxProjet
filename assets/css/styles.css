@@ -728,20 +728,22 @@ textarea:focus {
     text-align: center;
     line-height: 28px;
     justify-content: normal;
-    background-color: red;
+    margin-bottom: 20px;
 }
 .back_cgu{
     background-image: url(../img/test.jpg);
-    background-color: blue;
     display: inline-block;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 .wrap li{
     line-height: 30px;
-    background-color: #2a6496;
     list-style-type: disc   ;
-
 }
+img.r_sociaux{
+    float: left;
+    margin-top: 20px;
+}
+
 
 
 

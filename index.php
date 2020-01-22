@@ -32,8 +32,7 @@ include('inc/header.php');
                     <p>Fonctionnalité :</p>
                 <ul>
                     <li>Annalyse de capture tram réseau</li>
-                    <li>Sortir des statistics sur la tram</li>
-                    <li>hfbvfvbf</li>
+                    <li>Sortir des statistics sur la trame</li>
                 </ul></div>
             </div>
         </div>

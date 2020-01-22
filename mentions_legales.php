@@ -4,8 +4,9 @@ require('inc/function.php');
 
 include('inc/header.php'); ?>
 <div class="wrap">
-    <div class="wrap2">
-        <div class="back_cgu">
+    <div class="back_cgu">
+        <div class="wrap2">
+
             <h1 class="titre_main_cgu">Mentions Légales</h1>
             <p class="interline-height">Merci de lire avec attention les différentes modalités d’utilisation du présent
                 site
@@ -26,7 +27,7 @@ include('inc/header.php'); ?>
         <section>
             <h2 class="titre_second_cgu">Editeur du Site:</h2>
             <div class="wrap3">
-                <ul >
+                <ul>
                     <li>SARL NetScan Numéro de SIRET : 75221735600019</li>
                     <li>Responsable éditorial: Bière</li>
                     <li>20 rue Tondu du Metz 60350 ATTICHY</li>
@@ -36,12 +37,12 @@ include('inc/header.php'); ?>
                     <li>Site Web : https//www.NetScan.com</li>
                 </ul>
                 <h2 class="titre_second_cgu">Hebergement:</h2>
-                <ul >
+                <ul>
                     <li>Hébergeur : VHS</li>
                     <li>42 rue de la cassette,12000 Bolbec</li>
                     <li>Site Web : www.VHS.fr</li>
                 </ul>
-                <ul >
+                <ul>
                     <li>Développement</li>
                     <li>Raison sociale : Netscan</li>
                     <li>Forme sociale : S.A.R.L.</li>
@@ -58,8 +59,9 @@ include('inc/header.php'); ?>
 
         </section>
     </div>
-    <div class="wrap2">
-        <div class="back_cgu">
+    <div class="back_cgu">
+        <div class="wrap2">
+
             <h1 class="titre_main_cgu">Conditions Générales d'utilisation du site</h1>
 
             <p class="interline-height"> NetScan vous souhaite la bienvenue sur son site ,
@@ -78,17 +80,17 @@ include('inc/header.php'); ?>
     <div class="wrap3">
         <section>
 
-                <h2 class="titre_second_cgu">Présentation du site</h2>
-                <div>
-                    <p class="interline-height">Le site NetScan a pour objet de fournir des informations générales sur
-                        les flux
-                        d'une trame réseau.<br>
-                        Le site NetScan regroupe les sites et mini sites accessibles par l’adresse URL :<br>
-                        www.Netscan.com<br>
-                        Le Site NetScan est conçu en langue française.
-                    </p>
+            <h2 class="titre_second_cgu">Présentation du site</h2>
+            <div>
+                <p class="interline-height">Le site NetScan a pour objet de fournir des informations générales sur
+                    les flux
+                    d'une trame réseau.<br>
+                    Le site NetScan regroupe les sites et mini sites accessibles par l’adresse URL :<br>
+                    www.Netscan.com<br>
+                    Le Site NetScan est conçu en langue française.
+                </p>
 
-                </div>
+            </div>
 
 
             <h2 class="titre_second_cgu">Mise en garde et responsabilité</h2>
@@ -136,7 +138,7 @@ include('inc/header.php'); ?>
                             des
                             informations mises à la disposition sur le site ;
                         </li>
-                        <li >et plus généralement pour tous dommages, directs ou indirects, quelles qu’en soient les
+                        <li>et plus généralement pour tous dommages, directs ou indirects, quelles qu’en soient les
                             causes,
                             origines, nature ou conséquences, provoqués en raison de l’accès de quiconque au site ou de
                             l’impossibilité d’y accéder, de même que l’utilisation du site et/ou du crédit accordé à une
@@ -179,7 +181,8 @@ include('inc/header.php'); ?>
 
                     <h2 class="titre_second_cgu">Droit de réponse</h2>
 
-                    <p class="interline-height">Si vous estimez qu’un contenu porte atteinte à votre image, vous pouvez exercer un droit de
+                    <p class="interline-height">Si vous estimez qu’un contenu porte atteinte à votre image, vous pouvez
+                        exercer un droit de
                         réponse
                         en
                         remplissant ce formulaire.
@@ -191,13 +194,15 @@ include('inc/header.php'); ?>
 
                     <h2 class="titre_second_cgu">Interdiction de mirroiring</h2>
 
-                    <p class="interline-height">Aucune mise en ligne du site par un tiers sous une autre URL n’est autorisée sans autorisation
+                    <p class="interline-height">Aucune mise en ligne du site par un tiers sous une autre URL n’est
+                        autorisée sans autorisation
                         expresse
                         et
                         préalable de NetScan.</p>
 
                     <h2 class="titre_second_cgu">Interdiction de mirroiring</h2>
-                    <p class="interline-height">Aucune mise en ligne du site par un tiers sous une autre URL n’est autorisée sans autorisation
+                    <p class="interline-height">Aucune mise en ligne du site par un tiers sous une autre URL n’est
+                        autorisée sans autorisation
                         expresse
                         et
                         préalable de NetScan</p>
@@ -276,8 +281,9 @@ include('inc/header.php'); ?>
 
         </section>
     </div>
-    <div class="wrap2">
-        <div class="back_cgu">
+    <div class="back_cgu">
+        <div class="wrap2">
+
             <h1 class="titre_main_cgu"> Traitement des données à caractère personnel</h1>
             <section>
                 <p class="interline-height">
@@ -291,6 +297,7 @@ include('inc/header.php'); ?>
                     Cette information porte sur les traitements de données personnelles mis en œuvre sous la
                     responsabilité de
                     l’une des entités appartenant au groupe NetScan, telles que mentionnées ci-dessus. </p>
+
 
             </section>
         </div>
