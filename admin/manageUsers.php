@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Simple Responsive Admin</title>
     <!-- BOOTSTRAP STYLES-->
-    <link href="../assetsAdmin/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assetsAdmin/css/bootstrap.css" rel="stylesheet"/>
     <!-- FONTAWESOME STYLES-->
-    <link href="../assetsAdmin/css/font-awesome.css" rel="stylesheet" />
+    <link href="../assetsAdmin/css/font-awesome.css" rel="stylesheet"/>
     <!-- CUSTOM STYLES-->
-    <link href="../assetsAdmin/css/custom.css" rel="stylesheet" />
+    <link href="../assetsAdmin/css/custom.css" rel="stylesheet"/>
     <!-- GOOGLE FONTS-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
 </head>
 <body>
 <?php
@@ -30,8 +30,6 @@ $users = $query->fetchAll();
 debug($users); ?>
 
 
-
-
 <div id="wrapper">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="adjust-nav">
@@ -42,11 +40,11 @@ debug($users); ?>
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img src="../assetsAdmin/img/logo.png" />
+                    <img src="../assetsAdmin/img/logo.png"/>
                 </a>
             </div>
 
-            <span class="logout-spn" >
+            <span class="logout-spn">
                   <a href="#" style="color:#fff;">LOGOUT</a>
 
                 </span>
@@ -58,18 +56,17 @@ debug($users); ?>
             <ul class="nav" id="main-menu">
 
 
-                <li >
-                    <a href="../admin.html" ><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
+                <li>
+                    <a href="../admin.html"><i class="fa fa-desktop "></i>Dashboard <span class="badge">Included</span></a>
                 </li>
 
 
                 <li>
-                    <a href="ui.html"><i class="fa fa-table "></i>UI Elements  <span class="badge">Included</span></a>
+                    <a href="ui.html"><i class="fa fa-table "></i>UI Elements <span class="badge">Included</span></a>
                 </li>
                 <li class="active-link">
-                    <a href="blank.html"><i class="fa fa-edit "></i>Blank Page  <span class="badge">Included</span></a>
+                    <a href="blank.html"><i class="fa fa-edit "></i>Blank Page <span class="badge">Included</span></a>
                 </li>
-
 
 
                 <li>
@@ -93,10 +90,10 @@ debug($users); ?>
 
     </nav>
     <!-- /. NAV SIDE  -->
-    <div id="page-wrapper" >
+    <div id="page-wrapper">
         <div id="page-inner">
             <div class="col-lg-6 col-md-6">
-                <h5>Table  Sample Two</h5>
+                <h5>Liste des utilisateurs actifs</h5>
                 <div class="table-responsive">
                     <table class="table">
                         <thead>
@@ -106,19 +103,23 @@ debug($users); ?>
                             <th>Email</th>
                             <th>Rôle</th>
                             <th>Date de création</th>
+                            <th>Edit</th>
+                            <th>Supprimer</th>
                         </tr>
                         </thead>
                         <tbody>
 
                         <?php foreach ($users as $user) { ?>
                             <tr class="success">
-                            <td><?php echo $user['id'] ?></td>
-                            <td><?php echo $user['pseudo'] ?></td>
-                            <td><?php echo $user['email'] ?></td>
-                            <td><?php echo $user['role'] ?></td>
-                            <td><?php echo $user['created_at'] ?></td>
+                                <td><?php echo $user['id'] ?></td>
+                                <td><?php echo $user['pseudo'] ?></td>
+                                <td><?php echo $user['email'] ?></td>
+                                <td><?php echo $user['role'] ?></td>
+                                <td><?php echo $user['created_at'] ?></td>
+                                <td><a href="" id="editAdmin">Edit</a></td>
+                                <td><a href="" id="deleteAdmin">Supprimer</a></td>
                             </tr>
-                            <?php } ?>
+                        <?php } ?>
                         </tbody>
                     </table>
                 </div>
@@ -129,7 +130,7 @@ debug($users); ?>
                 </div>
             </div>
             <!-- /. ROW  -->
-            <hr />
+            <hr/>
 
             <!-- /. ROW  -->
         </div>
@@ -142,8 +143,9 @@ debug($users); ?>
 
 
     <div class="row">
-        <div class="col-lg-12" >
-            &copy;  2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;"  target="_blank">www.binarytheme.com</a>
+        <div class="col-lg-12">
+            &copy; 2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;"
+                                                       target="_blank">www.binarytheme.com</a>
         </div>
     </div>
 </div>

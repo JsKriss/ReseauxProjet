@@ -62,7 +62,7 @@ if (!empty($_POST['submited'])) {
         $hashPassword = password_hash($password1, PASSWORD_BCRYPT);
         $token = generateRandomString(120);
         // insert
-        $sql = "INSERT INTO users VALUES (null, :pseudo, :email, :password, :token, 'abonne', NOW())";
+        $sql = "INSERT INTO users VALUES (null, :pseudo, :email, :password, :token, 'newuser', NOW(), '1')";
         $query = $pdo->prepare($sql);
         $query->bindValue(':pseudo', $pseudo, PDO::PARAM_STR);
         $query->bindValue(':email', $email, PDO::PARAM_STR);

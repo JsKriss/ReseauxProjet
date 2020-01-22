@@ -20,8 +20,12 @@ if (!empty($_POST['submited'])) {
         $query->execute();
         $user = $query->fetch();
         // debug($user);
+
         if (!empty($user)) {
-            if (password_verify($password, $user['password'])) {
+            if($user['actif'] == '0') {
+                $errors['login'] = 'Compte inactif, veuillez attendre qu\'un administrateur approuve votre compte ou si votre compte a été désactivé veuillez contacter l\'administrateur.';
+            }
+            elseif (password_verify($password, $user['password'])) {
                 $_SESSION['login'] = array(
                     'id' => $user['id'],
                     'pseudo' => $user['pseudo'],
