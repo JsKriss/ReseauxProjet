@@ -30,10 +30,12 @@
         </ul>
     </nav>
     <a class="un" href="#factory">
-        <div class="icons"><i class="fas fa-info-circle"></i></div>
+        <div class="icons"><img src="assets/img/icons8-info-64.png"></div>
     </a>
     <a class="deux" href="#squad">
-        <div class="icons"><i class="fas fa-user-tie"></i></div>
+        <div class="icons"><img src="assets/img/icons8-microsoft-teams-96"></div>
     </a>
-
+    <a class="trois" href="#">
+        <div class="icons"><img src="assets/img/icons8-contact-96.png"></div>
+    </a>
 </header>

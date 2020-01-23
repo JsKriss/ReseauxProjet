@@ -11,14 +11,18 @@ ScrollReveal().reveal('.aboutus', {
         x: 120,
         y: 220
     },
-    delay: 2000
+    delay: 1800,
+    interval:300,
+    reset:true
 });
 ScrollReveal().reveal('.sub_title', {
     rotate: {
         x: 120,
         y: 220
     },
-    delay: 1500
+    delay: 1500,
+    interval:300,
+    reset:true
 });
 ScrollReveal().reveal('.text1', { delay: 500,interval: 300,reset:true });
 ScrollReveal().reveal('.text2', { delay: 800,interval: 300,reset:true });

@@ -67,7 +67,7 @@ include('inc/header.php');
             <div class="hexagone">
                 <div class="hexagonemain">
                     <div class="hexagonemainbefore">
-                        <a href="#ex4" rel="modal:open">   <img class="portrait" src="assets/img/IMG_1047.jpeg" alt=""> </a>
+                        <a href="#ex4" rel="modal:open">   <img class="portrait" src="assets/img/antonin.jpeg" alt=""> </a>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@ include('inc/header.php');
         </div>
     </div>
     <div id="ex4" class="modal">
-        <img class="portrait" src="assets/img/IMG_1047.jpeg" alt="">
+        <img class="portrait" src="assets/img/antonin.jpeg" alt="">
         <div class="presentation">
             <h2 class="prenom">Antonin</h2>
             <h3 class="job">Développeur</h3>
