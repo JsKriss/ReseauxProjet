@@ -71,6 +71,8 @@ a{text-decoration:none;}
 /* --------------------------------- */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #A9A9A9;
+
 }
 
 
@@ -205,7 +207,7 @@ h3.job{
 .bloc{
     width: 100%;
     padding: 5% 0;
-    background-color: white;
+    background-color: #A9A9A9;
 }
 .portrait{
     width:100%;
@@ -523,6 +525,10 @@ input.globalForm
 input:focus {
     outline: none !important;
     border-color: #0F2439;
+}
+#subscribeCGU {
+    float: left;
+    width: 20%;
 }
 
 .register_title{

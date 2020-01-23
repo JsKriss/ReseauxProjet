@@ -80,47 +80,53 @@ if (!empty($_POST['submited'])) {
 include('inc/header.php'); ?>
 
 
+    <div id="register" class="modal">
+        <h1 class="register_title">Inscription</h1>
+        <form id="register" class="form register" action="register.php" method="post">
 
-        <div id="register" class="modal">
-            <h1  class="register_title">Inscription</h1>
-            <form id="register" class="form register" action="register.php" method="post">
+            <div class="register_container">
+                <label for="pseudo">Pseudo *</label>
+                <input class="globalForm" type="text" name="pseudo" id="pseudo"
+                       value="<?php if (!empty($_POST['pseudo'])) {
+                           echo $_POST['pseudo'];
+                       } ?>">
+                <p class="error"><?php if (!empty($errors['pseudo'])) {
+                        echo $errors['pseudo'];
+                    } ?></p>
 
-                <div class="register_container">
-                    <label for="pseudo">Pseudo *</label>
-                    <input class="globalForm" type="text" name="pseudo" id="pseudo" value="<?php if (!empty($_POST['pseudo'])) {
-                        echo $_POST['pseudo'];
-                    } ?>">
-                    <p class="error"><?php if (!empty($errors['pseudo'])) {
-                            echo $errors['pseudo'];
-                        } ?></p>
+                <label for="email">Email *</label>
+                <input class="globalForm" type="email" name="email" id="email"
+                       value="<?php if (!empty($_POST['email'])) {
+                           echo $_POST['email'];
+                       } ?>">
+                <p class="error"><?php if (!empty($errors['email'])) {
+                        echo $errors['email'];
+                    } ?></p>
 
-                    <label for="email">Email *</label>
-                    <input class="globalForm" type="email" name="email" id="email" value="<?php if (!empty($_POST['email'])) {
-                        echo $_POST['email'];
-                    } ?>">
-                    <p class="error"><?php if (!empty($errors['email'])) {
-                            echo $errors['email'];
-                        } ?></p>
+                <label for="password1">Mot de passe *</label>
+                <input class="globalForm" type="password" name="password1" id="password1" value="">
+                <p class="error"><?php if (!empty($errors['password'])) {
+                        echo $errors['password'];
+                    } ?></p>
 
-                    <label for="password1">Mot de passe *</label>
-                    <input class="globalForm" type="password" name="password1" id="password1" value="">
-                    <p class="error"><?php if (!empty($errors['password'])) {
-                            echo $errors['password'];
-                        } ?></p>
+                <label for="password2">Confirmez votre mot de passe *</label>
+                <input class="globalForm" type="password" name="password2" id="password2" value="">
 
-                    <label for="password2">Confirmez votre mot de passe *</label>
-                    <input class="globalForm" type="password" name="password2" id="password2" value="">
-
-                    <input class="globalForm" type="checkbox" required name="terms" id="subscribeCGU"> <!--required car problèmes avec safari-->
-                    <label for="subscribeCGU">J'accepte les Conditions Générales d'Utilisation</label>
-                    <br>
-                    <br>
-                    <input id="submit" type="submit" name="submited" value="Inscrivez-vous">
-
-                    <div><img class="img_register_modal" src="assets/img/logo.png"></div>
+                <div>
+                    <input class="globalForm" type="checkbox" required name="terms" id="subscribeCGU"  >
+                    <!--required car problèmes avec safari-->
+                    <label for="subscribeCGU">J'accepte les <a href="mentions_legales.php">Conditions Générales
+                            d'Utilisation</a> </label>
                 </div>
-            </form>
-        </div>
+
+                <br>
+                <br>
+                <input id="submit" type="submit" name="submited" value="Inscrivez-vous">
+
+                <div><img class="img_register_modal" src="assets/img/logo.png"></div>
+            </div>
+        </form>
+    </div>
 
 
 
