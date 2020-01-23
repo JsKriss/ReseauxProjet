@@ -152,40 +152,41 @@ $success = true;
 
 <section id="contact">
     <div class="wrap2">
-        <h2 class="register_title">Nous Contacter :</h2>
-        <p class="textintro">Si vous avez des questions relatives à l'utilsation du site :</p>
+        <h2 class="register_title contactUS">Nous Contacter</h2>
+        <div class="ligne"></div>
 
         <?php if($success) { ?>
             <p class="success">Merci pour votre message.</p>
         <?php } else  { ?>
         <form class="form contact" action="#" method="post">
-            <div class="w50">
+            <div class="partI">
                 <label for="nom">Votre Nom</label>
                 <input class="input_formContact" type="text" name="nom" value="<?php if(!empty($_POST['nom'])) { echo $_POST['nom']; } ?>" placeholder="Ex: Doe">
                 <p class="error"><?php if(!empty($errors['nom'])) {echo $errors['nom'];} ?></p>
             </div>
-            <div class="w50">
+            <div class="partI">
                 <label for="prenom">Votre Prenom</label>
                 <input class="input_formContact" type="text" name="prenom" value="<?php if(!empty($_POST['prenom'])) { echo $_POST['prenom']; } ?>" placeholder="Ex: John">
                 <p class="error"><?php if(!empty($errors['prenom'])) {echo $errors['prenom'];} ?></p>
             </div>
 
-            <div class="w75">
+            <div class="partII">
                 <label for="email">Votre Email</label>
                 <input class="input_formEmail" type="email" name="email" value="<?php if(!empty($_POST['email'])) { echo $_POST['email']; } ?>" placeholder="Ex: johndoe@gmail.com">
                 <p class="error"><?php if(!empty($errors['email'])) {echo $errors['email'];} ?></p>
             </div>
 
-            <div class="w100">
+            <div class="partIII">
                 <label for="message">Votre Message</label>
                 <textarea class="textarea_formContact" type="text" name="message" rows="8" cols="80" placeholder="Bonjour"><?php if(!empty($_POST['message'])) { echo $_POST['message']; } ?></textarea>
                 <p class="error"><?php if(!empty($errors['message'])) {echo $errors['message'];} ?></p>
+                <input class="submit_formContact" id="submit" type="submit" name="submit" value="Envoyer">
             </div>
-            <input id="submit" type="submit" name="submit" value="Envoyer">
         </form>
         <?php } ?>
     </div>
 </section>
+<div class="clear"></div>
 
 
 

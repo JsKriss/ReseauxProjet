@@ -87,7 +87,7 @@ include('inc/header.php'); ?>
 
                 <div class="register_container">
                     <label for="pseudo">Pseudo *</label>
-                    <input type="text" name="pseudo" id="pseudo" value="<?php if (!empty($_POST['pseudo'])) {
+                    <input class="globalForm" type="text" name="pseudo" id="pseudo" value="<?php if (!empty($_POST['pseudo'])) {
                         echo $_POST['pseudo'];
                     } ?>">
                     <p class="error"><?php if (!empty($errors['pseudo'])) {
@@ -95,7 +95,7 @@ include('inc/header.php'); ?>
                         } ?></p>
 
                     <label for="email">Email *</label>
-                    <input type="email" name="email" id="email" value="<?php if (!empty($_POST['email'])) {
+                    <input class="globalForm" type="email" name="email" id="email" value="<?php if (!empty($_POST['email'])) {
                         echo $_POST['email'];
                     } ?>">
                     <p class="error"><?php if (!empty($errors['email'])) {
@@ -103,15 +103,15 @@ include('inc/header.php'); ?>
                         } ?></p>
 
                     <label for="password1">Mot de passe *</label>
-                    <input type="password" name="password1" id="password1" value="">
+                    <input class="globalForm" type="password" name="password1" id="password1" value="">
                     <p class="error"><?php if (!empty($errors['password'])) {
                             echo $errors['password'];
                         } ?></p>
 
                     <label for="password2">Confirmez votre mot de passe *</label>
-                    <input type="password" name="password2" id="password2" value="">
+                    <input class="globalForm" type="password" name="password2" id="password2" value="">
 
-                    <input type="checkbox" required name="terms" id="subscribeCGU"> <!--required car problèmes avec safari-->
+                    <input class="globalForm" type="checkbox" required name="terms" id="subscribeCGU"> <!--required car problèmes avec safari-->
                     <label for="subscribeCGU">J'accepte les Conditions Générales d'Utilisation</label>
                     <br>
                     <br>

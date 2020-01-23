@@ -52,7 +52,7 @@ include('inc/header.php'); ?>
         <h1  class="register_title">Connexion</h1>
         <form id="connexion" class="form login" action="login.php" method="post">
             <label for="login">Pseudo or email *</label>
-            <input type="text" name="login" id="login" value="<?php if (!empty($_POST['login'])) {
+            <input class="globalForm" type="text" name="login" id="login" value="<?php if (!empty($_POST['login'])) {
                 echo $_POST['login'];
             } ?>">
             <p class="error"><?php if (!empty($errors['login'])) {
@@ -60,7 +60,7 @@ include('inc/header.php'); ?>
                 } ?></p>
 
             <label for="password">Mot de passe *</label>
-            <input type="password" name="password" id="password" value="">
+            <input class="globalForm" type="password" name="password" id="password" value="">
 
             <p class="forget register"><a href="register.php">Pas de compte NetScan ? Créez-le maintenant !</a></p>
             <br>
