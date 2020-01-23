@@ -200,7 +200,7 @@ $success = true;
                         <p class="error"><?php if (!empty($errors['message'])) {
                                 echo $errors['message'];
                             } ?></p>
-                        <input class="submit_formContact" id="submit" type="submit" name="submit" value="Envoyer">
+                        <input class="submit_formContact" type="submit" name="submit" value="Envoyer">
                     </div>
                 </form>
             <?php } ?>
