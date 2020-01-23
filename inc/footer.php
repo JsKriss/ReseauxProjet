@@ -1,4 +1,4 @@
-<div class="clear"></div>
+
 <footer>
     <div class="footeur">
         <div class="wrap2">

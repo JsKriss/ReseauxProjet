@@ -95,7 +95,6 @@ header{
     max-width: 70%;
     width: 100%;
     margin: 0 auto;
-
 }
 /* ---------------------------------------------------*/
 /* ------- Menu -------*/
@@ -204,7 +203,7 @@ h3.job{
     color: #dddddd;
 }
 .bloc{
-    /*width: 100%;*/
+    width: 100%;
     padding: 5% 0;
     background-color: white;
 }
@@ -227,7 +226,9 @@ h3{
 /* --------------------------------- */
 /* ------- HEZAGONE -------*/
 /* --------------------------------- */
-
+#squad {
+    margin-top: 200px;
+}
 .hexagonemainbefore img:hover{
     opacity: 0.6;
 }
@@ -449,10 +450,8 @@ h3{
 /* ------- FIN RESPONSIVE -------*/
 /* --------------------------------- */
 
-body{
-    color: black;
 
-}
+
 h1 {
     font-size: 2em;
     margin: .67em 0;
@@ -636,16 +635,20 @@ div#sub-modal.transition {
 #contact {
    /* mettre background*/
     background: radial-gradient(circle, rgba(32,36,45,1) 0%, rgba(5,57,59,1) 100%);
+    height: 800px;
 }
 .contactUS {
     font-size: 2em;
     text-transform: uppercase;
+    color: #A9A9A9;
+    padding-top: 40px;
 }
 .ligne {
     width: 278px;
     height: 5px;
-    margin: 30px auto;
-    background-color: #0F2439;
+    margin: 20px auto;
+    background-color: #A9A9A9;
+    border-radius: 10px;
 }
 textarea:focus {
     outline: none !important;
@@ -670,9 +673,12 @@ input.input_formContact  {
     margin-bottom: 10px;
     font-size: 15px;
     line-height: 20px;
-    color: black;
+    color: #0F2439;
     box-sizing: border-box;
     border-radius: 5px;
+    background-color: #A9A9A9;
+    border-color: black;
+
 }
 input.input_formEmail {
     width: 95%;
@@ -684,9 +690,11 @@ input.input_formEmail {
     margin-bottom: 10px;
     font-size: 15px;
     line-height: 20px;
-    color: black;
+    color: #0F2439;
     box-sizing: border-box;
     border-radius: 5px;
+    background-color: #A9A9A9;
+    border-color: black;
 }
 textarea.textarea_formContact {
     display: inline;
@@ -702,9 +710,12 @@ textarea.textarea_formContact {
     resize: none;
     width: 115%;
     height: 20%;
+    background-color: #A9A9A9;
+    border-color: black;
 }
 form.contact label {
     display: inline;
+    color: #A9A9A9;
 }
 
 /*FIN DES FORMULAIRES*/
@@ -724,7 +735,6 @@ form.contact label {
 .footeur{
     height: 22%;
     background-color: #BFB9B9;
-    margin-top: 22px;
     float: left;
     width: 100%;
     margin-top: 80px;
