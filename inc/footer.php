@@ -4,14 +4,16 @@
         <div class="wrap2">
             <div class="bloc_foot">
                 <div class="sociaux">
-                     <div> <a href="#"><img class="r_sociaux" src="assets/img/social_facebook_box_blue_256_30649.png"></a></div>
-                     <div> <a href="#"><img class="r_sociaux" src="assets/img/social-twitter-icon_34350.png"></a></div>
-                     <div> <a href="#"><img class="r_sociaux" src="assets/img/instagram_socialnetwork_22374.png"></a></div>
+                    <div><a href="#"><img class="r_sociaux" src="assets/img/social_facebook_box_blue_256_30649.png"></a>
+                    </div>
+                    <div><a href="#"><img class="r_sociaux" src="assets/img/social-twitter-icon_34350.png"></a></div>
+                    <div><a href="#"><img class="r_sociaux" src="assets/img/instagram_socialnetwork_22374.png"></a>
+                    </div>
                 </div>
             </div>
             <div class="bloc_foot">
                 <p class="mentions">Lire nos <a href="mentions_legales.php">Mentions légales</a></p>
-               <p class="mentions"> ©2020 01copyright.fr. All right reserved.</p>
+                <p class="mentions"> ©2020 01copyright.fr. All right reserved.</p>
             </div>
             <div class="bloc_foot">
                 <p class="infos">NetScan</p>
