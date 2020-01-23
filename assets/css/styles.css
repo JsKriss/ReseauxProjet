@@ -243,9 +243,9 @@ h3{
 .hexagone {
     position: relative;
     /* Pour rendre responsive mettre width à 100% */;
-    width: 30%;
-    margin-right: 35%;
-    margin-left: 35%;
+    width: 20%;
+    margin-right: 40%;
+    margin-left: 40%;
     visibility: hidden;
     overflow: hidden;
   }
@@ -307,9 +307,9 @@ h3{
 .hexagone2 {
      position: relative;
      /* Pour rendre responsive mettre width à 100% */;
-     width: 30%;
-     margin-right: 10%;
-     margin-left: 10%;
+     width: 20%;
+     margin-right: 15%;
+     margin-left: 15%;
      float: left;
      visibility: hidden;
      overflow: hidden;
