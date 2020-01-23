@@ -725,6 +725,9 @@ form.contact label {
 .footeur{
     height: 22%;
     background-color: #BFB9B9;
+    margin-top: 22px;
+    float: left;
+    width: 100%;
     margin-top: 80px;
 }
 .titre_main_cgu{
@@ -769,10 +772,10 @@ p.textintro{
     margin-bottom: 13px;
 }
 p.infos{
-    font-size: 1.8vw;
+    font-size: 1.1vw;
 }
 p.mentions{
-    font-size: 1.8vw;
+    font-size: 1.1vw;
 }
 
 
