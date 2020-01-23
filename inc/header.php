@@ -14,7 +14,6 @@
 </head>
 
 <body>
-<?php // var_dump($_SESSION);  ?>
 <header class="header_accueil">
     <nav class="topnav" id="myTopnav">
         <ul>
@@ -23,10 +22,16 @@
             <?php if (!is_logged()) { ?>
                 <li><a href="login.php">Connexion</a></li>
                 <li><a href="register.php">Inscription</a></li>
+            <?php } elseif(!empty($_SESSION['login']['role']==="admin")) { ?>
+                <li><a href="admin/manageUsers.php">Panel Admin</a></li>
+                <li><a href="trame.php">Stat Me!</a></li>
+                <li><a href="deconnexion.php">Deconnexion</a></li>
             <?php } else { ?>
                 <li><a href="trame.php">Stat Me!</a></li>
                 <li><a href="deconnexion.php">Deconnexion</a></li>
-            <?php } ?>
+            <?php }
+
+            ?>
         </ul>
     </nav>
     <a class="un" href="#factory">
@@ -39,3 +44,4 @@
         <div class="icons"><img src="assets/img/icons8-contact-96.png"></div>
     </a>
 </header>
+

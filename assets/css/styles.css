@@ -180,6 +180,9 @@ header{
     padding: 15px;
     border-radius: 193px;
 }
+.icons:hover{
+    opacity: 0.8;
+}
 
 /* --------------------------------- */
 /* ------- FIN HEADER -------*/
@@ -313,6 +316,7 @@ h3{
 }
 .about{
     height: 100%;
+
     background: radial-gradient(circle, rgba(32,36,45,1) 0%, rgba(5,57,59,1) 100%);
 }
 .bloc1{
@@ -503,10 +507,7 @@ h1 {
     background: transparent;
 }
 
-select,
-input[type="text"],
-input[type="password"],
-input[type="email"]
+input.globalForm
 {
     width:100%;
     display: inline-block;
@@ -556,8 +557,8 @@ div#register.modal{
 }
 div#connexion.modal_form.modal {
     margin-bottom: 100px;
-    height: 73%;
     background-color: #A9A9A9;
+    height: auto;
 }
 form#connexion.form.login{
     margin-top: 32px;
@@ -633,27 +634,78 @@ div#sub-modal.transition {
 
 }
 /*FORMULAIRE CONTACT*/
+#contact {
+   /* mettre background*/
+    background: radial-gradient(circle, rgba(32,36,45,1) 0%, rgba(5,57,59,1) 100%);
+}
+.contactUS {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.ligne {
+    width: 278px;
+    height: 5px;
+    margin: 30px auto;
+    background-color: #0F2439;
+}
 textarea:focus {
     outline: none !important;
     border-color: #0F2439;
 }
-.w50 {
+.partI {
     width: 50%;
 }
 form.contact div {
     float: left;
 }
-.w75 {
+.partII {
     width: 100%;
 }
-
-.input_formEmail {
-    width: 250px;
+input.input_formContact  {
+    width: 90%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
-.textarea_formContact {
+input.input_formEmail {
+    width: 95%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+textarea.textarea_formContact {
+    display: inline;
+    vertical-align: middle;
+    margin-top: 3px;
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 5px;
     padding-top: 10px;
     margin-bottom: 30px;
     resize: none;
+    width: 115%;
+    height: 20%;
+}
+form.contact label {
+    display: inline;
 }
 
 /*FIN DES FORMULAIRES*/
@@ -673,7 +725,7 @@ form.contact div {
 .footeur{
     height: 22%;
     background-color: #BFB9B9;
-    margin-top: 22px;
+    margin-top: 80px;
 }
 .titre_main_cgu{
     text-align: center;

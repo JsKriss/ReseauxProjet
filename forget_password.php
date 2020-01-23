@@ -35,7 +35,7 @@ include('inc/header.php'); ?>
         <form  class="form forget" action="forget_password.php" method="post">
             <p class="label"><label for="email">Email *</label></p>
             <br>
-            <input type="text" name="email" value="<?php if (!empty($_POST['email'])) {
+            <input class="globalForm" type="text" name="email" value="<?php if (!empty($_POST['email'])) {
                 echo $_POST['email'];
             } ?>">
             <p class="error"><?php if (!empty($errors['email'])) {

@@ -52,7 +52,7 @@ function generateRandomString($length = 10) {
 
 function is_logged()
 {
-    $roles = array('abonne','admin');
+    $roles = array('newuser', 'user','admin');
 
     if(!empty($_SESSION['login'])) {
         if(!empty($_SESSION['login']['id']) && is_numeric($_SESSION['login']['id'])) {
@@ -95,5 +95,14 @@ function restoreUser($token) {
     $sql = "UPDATE users SET actif = '1' WHERE users.token = :token";
     $query = $pdo->prepare($sql);
     $query->bindValue(':token', $token, PDO::PARAM_STR);
+    $query->execute();
+}
+
+function deleteMessage($id) {
+    include('pdo.php');
+    $sql = "DELETE FROM contact
+    WHERE id = :id";
+    $query = $pdo->prepare($sql);
+    $query->bindValue(':id', $id, PDO::PARAM_INT);
     $query->execute();
 }

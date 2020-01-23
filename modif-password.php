@@ -60,13 +60,13 @@ include('inc/header.php'); ?>
 
         <form id="formulaires" class="form modif" action="" method="post">
             <label for="password1">Nouveau mot de passe *</label>
-            <input type="password" name="password1" id="password1" value="">
+            <input class="globalForm" type="password" name="password1" id="password1" value="">
             <p class="error"><?php if (!empty($errors['password'])) {
                     echo $errors['password'];
                 } ?></p>
 
             <label for="password2">Confirmez votre mot de passe *</label>
-            <input type="password" name="password2" id="password2" value="">
+            <input class="globalForm" type="password" name="password2" id="password2" value="">
 
             <input id="submit" type="submit" name="submitted" value="Envoyer">
         </form>
