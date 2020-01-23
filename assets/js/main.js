@@ -26,10 +26,6 @@ ScrollReveal().reveal('.text1,.text2,.text3', {
 });
 ScrollReveal().reveal('.sub_title', { delay: 300,interval: 300,reset:true });
 
-$('.icons').hover(function(){
-    $(this).effect('shake')
-})
-
 $(document).ready(function(){
 
 // modal login

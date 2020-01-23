@@ -180,6 +180,9 @@ header{
     padding: 15px;
     border-radius: 193px;
 }
+.icons:hover{
+    opacity: 0.8;
+}
 
 /* --------------------------------- */
 /* ------- FIN HEADER -------*/
