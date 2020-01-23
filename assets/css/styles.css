@@ -531,6 +531,8 @@ input:focus {
     text-align: center;
     margin-bottom: 20px;
     margin-top: auto;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .img_register_modal{
@@ -646,9 +648,7 @@ form.contact div {
 .w75 {
     width: 100%;
 }
-inputformContact {
-    padding: 5px;
-}
+
 .input_formEmail {
     width: 250px;
 }
@@ -707,7 +707,7 @@ inputformContact {
     margin-bottom: 20px;
 }
 .back_cgu{
-    background-image: url(../img/test.jpg);
+    background-color: #aaa8a7;
     display: inline-block;
     opacity: 0.9;
 }
@@ -718,6 +718,18 @@ inputformContact {
 img.r_sociaux{
     float: left;
     margin-top: 20px;
+}
+p.textintro{
+    margin-bottom: 13px;
+}
+p.infos{
+    font-size: 1em;
+}
+p.mentions{
+    font-size: 0.8em;
+}
+.copyright{
+    font-size: 12px;
 }
 
 

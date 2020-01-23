@@ -11,6 +11,7 @@
             </div>
             <div class="bloc_foot">
                 <p class="mentions">Lire nos <a href="mentions_legales.php">Mentions légales</a></p>
+               <p class="mentions"> ©2020 01copyright.fr. All right reserved.</p>
             </div>
             <div class="bloc_foot">
                 <p class="infos">NetScan</p>

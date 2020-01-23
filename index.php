@@ -33,7 +33,6 @@ include('inc/header.php');
                 <ul>
                     <li class="tache">Annalyse de capture tram réseau</li>
                     <li class="tache">Sortir des statistics sur la tram</li>
-                    <li class="tache">hfbvfvbf</li>
                 </ul></div>
             </div>
         </div>
