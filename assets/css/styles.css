@@ -165,26 +165,14 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.un,.deux,.trois{
-     width: 100%;
-     border-color: #0f2439;
-}
-.un i{
-    color: cornflowerblue;
-    font-size: 6.5em;
-}
-.deux i{
-    font-size: 6em;
-    color: cadetblue;
-    margin-left: 9px;
-}
+
 .icon:hover{
     background-color: papayawhip;
 }
 .icons{
     width: 133px;
     height: 133px;
-    margin-top: 195px;
+    margin-top: 215px;
     margin-left: 11%;
     margin-right: 11%;
     float: left;
@@ -371,65 +359,13 @@ h3{
 /* ------- RESPONSIVE -------*/
 /* --------------------------------- */
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1180px) {
     .icons{
-
-        margin-left: 16%;
-        margin-right: 16%;
-        float: left;
-        background-color: darkgray;
-        padding: 30px;
-
-    }
-    .un i{
-        color: cornflowerblue;
-        font-size: 8.4em;
-    }
-    .deux i{
-        font-size: 8.7em;
-        color: cadetblue;
-        margin-left: 5px;
-    }
-}
-@media screen and (max-width: 1080px) {
-    .icons{
-        margin-left: 15%;
-        margin-right: 15%;
-        float: left;
-        background-color: darkgray;
-        padding: 20px;
-    }
-    .un i{
-        color: cornflowerblue;
-        font-size: 9.5em;
-    }
-    .deux i{
-        font-size: 9.3em;
-        color: cadetblue;
-        margin-left: 11px;
+        margin-left: 15.5%;
+        margin-right: 0%;
     }
 }
 @media screen and (max-width: 970px) {
-    .icons{
-        width: 173px;
-        height: 173px;
-        margin-top: 230px;
-        margin-left: 14%;
-        margin-right: 14%;
-        float: left;
-        background-color: darkgray;
-        padding: 15px;
-
-    }
-    .un i{
-        color: cornflowerblue;
-        font-size: 8.9em;
-    }
-    .deux i{
-        font-size: 8.4em;
-        color: cadetblue;
-        margin-left: 12px;
-    }
     header{
         background-image: url(../img/fond-menu.jpg);
         background-size: 180%;
@@ -450,26 +386,13 @@ h3{
         color: white;
         margin-left: 8%;
     }
+    .icons{
+        margin-left: 12.5%;
+    }
 }
 @media screen and (max-width: 790px) {
     .icons{
-        width: 153px;
-        height: 153px;
-        margin-left: 14%;
-        margin-right: 14%;
-        float: left;
-        background-color: darkgray;
-        padding: 20px;
-
-    }
-    .un i {
-        color: cornflowerblue;
-        font-size: 7.2em;
-    }
-    .deux i{
-        font-size: 7.1em;
-        color: cadetblue;
-        margin-left: 7px;
+      margin-left: 11.3%;
     }
     .aboutus{
         margin-top: 70px;
@@ -480,22 +403,8 @@ h3{
     }
 }
 @media screen and (max-width: 700px) {
-    .icons{
-        width: 133px;
-        height: 133px;
-        margin-top: 90px;
-        margin-left: 40%;
-        background-color: darkgray;
-        padding: 20px;
-    }
-    .un i{
-        color: cornflowerblue;
-        font-size: 5.9em;
-    }
-    .deux i{
-        font-size: 6em;
-        color: cadetblue;
-        margin-left: 5px;
+    .icons {
+        margin-left: 9%;
     }
     header{
         background-image: url(../img/fond-menu.jpg);
@@ -522,13 +431,18 @@ h3{
     .aboutus{
         margin-top: 30px;
     }
-}
-@media screen and (max-width: 550px) {
-    .aboutus{
-        margin-top: 10px;
+    .icons {
+        margin-left: 6.5%;
     }
 }
-
+@media screen and (max-width: 550px) {
+    .aboutus {
+        margin-top: 10px;
+    }
+    .icons {
+        margin-left: 5.5%;
+    }
+}
 /* --------------------------------- */
 /* ------- FIN RESPONSIVE -------*/
 /* --------------------------------- */

@@ -30,12 +30,12 @@
         </ul>
     </nav>
     <a class="un" href="#factory">
-        <div class="icons"><img src="assets/img/icons8-info-64.png"></div>
+        <div class="icons"><img src="assets/img/icons8-about-96.png"></div>
     </a>
     <a class="deux" href="#squad">
-        <div class="icons"><img src="assets/img/icons8-microsoft-teams-96"></div>
+        <div class="icons"><img src="assets/img/icons8-microsoft-teams-96.png"></div>
     </a>
-    <a class="trois" href="#">
+    <a class="trois" href="#contact">
         <div class="icons"><img src="assets/img/icons8-contact-96.png"></div>
     </a>
 </header>

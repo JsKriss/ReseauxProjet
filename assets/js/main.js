@@ -11,22 +11,20 @@ ScrollReveal().reveal('.aboutus', {
         x: 120,
         y: 220
     },
-    delay: 1800,
+    delay: 500,
     interval:300,
     reset:true
 });
-ScrollReveal().reveal('.sub_title', {
+ScrollReveal().reveal('.text1,.text2,.text3', {
     rotate: {
         x: 120,
         y: 220
     },
-    delay: 1500,
+    delay: 900,
     interval:300,
     reset:true
 });
-ScrollReveal().reveal('.text1', { delay: 500,interval: 300,reset:true });
-ScrollReveal().reveal('.text2', { delay: 800,interval: 300,reset:true });
-ScrollReveal().reveal('.text3', { delay: 1300,interval: 300,reset:true });
+ScrollReveal().reveal('.sub_title', { delay: 300,interval: 300,reset:true });
 
 
 
