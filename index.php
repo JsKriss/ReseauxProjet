@@ -31,7 +31,7 @@ include('inc/header.php');
                     <p class="text3"> <img class="icon_about" src="assets/img/societe.png"></p>
                     <p>Fonctionnalité :</p>
                 <ul>
-                    <li class="tache">Annalyse de capture tram réseau</li>
+                    <li class="tache">Analyse de capture tram réseau</li>
                     <li class="tache">Sortir des statistics sur la tram</li>
                 </ul></div>
             </div>
@@ -39,7 +39,7 @@ include('inc/header.php');
     </div>
 </div>
 </section>
-<div class="clear"></div>
+<!--<div class="clear"></div>-->
 <section id="squad">
 <div class="bloc">
     <div class="wrap">
