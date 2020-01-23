@@ -313,7 +313,7 @@ h3{
 }
 .about{
     height: 100%;
-    background: rgb(32,36,45);
+
     background: radial-gradient(circle, rgba(32,36,45,1) 0%, rgba(5,57,59,1) 100%);
 }
 .bloc1{
@@ -349,7 +349,7 @@ h3{
 }
 .aboutus{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30%;
     font-size: 7.5vw;
     padding: 20px;
     margin-left: 50px;
