@@ -808,6 +808,16 @@ p.infos{
 p.mentions{
     font-size: 1.1vw;
 }
+#copyright {
+    text-align: center;
+    font-style: italic;
+}
+.mentionslegales {
+    margin-top: 33px;
+}
+.raisonsocial {
+    margin-top: 12px;
+}
 
 
 
