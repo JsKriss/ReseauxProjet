@@ -1,24 +1,8 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Simple Responsive Admin</title>
-    <!-- BOOTSTRAP STYLES-->
-    <link href="../assetsAdmin/css/bootstrap.css" rel="stylesheet"/>
-    <!-- FONTAWESOME STYLES-->
-    <link href="../assetsAdmin/css/font-awesome.css" rel="stylesheet"/>
-    <!-- CUSTOM STYLES-->
-    <link href="../assetsAdmin/css/custom.css" rel="stylesheet"/>
-    <!-- GOOGLE FONTS-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
-</head>
-<body>
 <?php
 include('../inc/pdo.php');
 include('../inc/function.php');
 
-$title = 'show users';
+include('backheader.php');
 
 $sql = "SELECT * FROM contact
         WHERE 1";
@@ -121,28 +105,6 @@ $contacts = $query->fetchAll();
     <!-- /. PAGE WRAPPER  -->
 
 </div>
-<div class="footer">
-
-
-    <div class="row">
-        <div class="col-lg-12">
-            &copy; 2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;"
-                                                       target="_blank">www.binarytheme.com</a>
-        </div>
-    </div>
-</div>
-
-
-<!-- /. WRAPPER  -->
-<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-<!-- JQUERY SCRIPTS -->
-<script src="../assetsAdmin/js/jquery-1.10.2.js"></script>
-<!-- BOOTSTRAP SCRIPTS -->
-<script src="../assetsAdmin/js/bootstrap.min.js"></script>
-<!-- CUSTOM SCRIPTS -->
-<script src="../assetsAdmin/js/custom.js"></script>
-
-
-</body>
-</html>
+<?php
+include('backfooter.php');
 

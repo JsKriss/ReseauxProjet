@@ -556,8 +556,8 @@ div#register.modal{
 }
 div#connexion.modal_form.modal {
     margin-bottom: 100px;
-    height: 73%;
     background-color: #A9A9A9;
+    height: auto;
 }
 form#connexion.form.login{
     margin-top: 32px;
