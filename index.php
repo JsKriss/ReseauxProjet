@@ -16,7 +16,7 @@ include('inc/header.php');
         <div class="bloc1">
             <div>
                 <p class="text1"> <img class="icon_about" src="assets/img/target.png"></p>
-                <p class="text1"> NetScan est accessible a toutes et à tous. Inscription facile et rapide </p>
+                <p class="text1"> NetScan est accessible à toutes et à tous. Inscription facile et rapide </p>
             </div>
         </div>
         <div class="bloc1">
@@ -39,6 +39,7 @@ include('inc/header.php');
     </div>
 </div>
 </section>
+<div class="clear"></div>
 <section id="squad">
 <div class="bloc">
     <div class="wrap">
@@ -71,6 +72,7 @@ include('inc/header.php');
                 </div>
             </div>
     </div>
+    <div class="clear"></div>
 
     <!-- Link to open the modal -->
     <div id="ex1" class="modal">
@@ -119,6 +121,7 @@ include('inc/header.php');
     </div>
 </div>
 </section>
+<div class="clear"></div>
 
 <!--SECTION CONTACT-->
 <?php
@@ -149,43 +152,62 @@ $success = true;
 }
 } ?>
 
+<div class="wrap2">
+    <section id="contact">
 
-<section id="contact">
-    <div class="wrap2">
         <h2 class="register_title contactUS">Nous Contacter</h2>
         <div class="ligne"></div>
 
-        <?php if($success) { ?>
+        <?php if ($success) { ?>
             <p class="success">Merci pour votre message.</p>
-        <?php } else  { ?>
-        <form class="form contact" action="#" method="post">
-            <div class="partI">
-                <label for="nom">Votre Nom</label>
-                <input class="input_formContact" type="text" name="nom" value="<?php if(!empty($_POST['nom'])) { echo $_POST['nom']; } ?>" placeholder="Ex: Doe">
-                <p class="error"><?php if(!empty($errors['nom'])) {echo $errors['nom'];} ?></p>
-            </div>
-            <div class="partI">
-                <label for="prenom">Votre Prenom</label>
-                <input class="input_formContact" type="text" name="prenom" value="<?php if(!empty($_POST['prenom'])) { echo $_POST['prenom']; } ?>" placeholder="Ex: John">
-                <p class="error"><?php if(!empty($errors['prenom'])) {echo $errors['prenom'];} ?></p>
-            </div>
+        <?php } else { ?>
+            <form class="form contact" action="#" method="post">
+                <div class="partI">
+                    <label for="nom">Votre Nom</label>
+                    <input class="input_formContact" type="text" name="nom" value="<?php if (!empty($_POST['nom'])) {
+                        echo $_POST['nom'];
+                    } ?>" placeholder="Ex: Doe">
+                    <p class="error"><?php if (!empty($errors['nom'])) {
+                            echo $errors['nom'];
+                        } ?></p>
+                </div>
+                <div class="partI">
+                    <label for="prenom">Votre Prenom</label>
+                    <input class="input_formContact" type="text" name="prenom"
+                           value="<?php if (!empty($_POST['prenom'])) {
+                               echo $_POST['prenom'];
+                           } ?>" placeholder="Ex: John">
+                    <p class="error"><?php if (!empty($errors['prenom'])) {
+                            echo $errors['prenom'];
+                        } ?></p>
+                </div>
 
-            <div class="partII">
-                <label for="email">Votre Email</label>
-                <input class="input_formEmail" type="email" name="email" value="<?php if(!empty($_POST['email'])) { echo $_POST['email']; } ?>" placeholder="Ex: johndoe@gmail.com">
-                <p class="error"><?php if(!empty($errors['email'])) {echo $errors['email'];} ?></p>
-            </div>
+                <div class="partII">
+                    <label for="email">Votre Email</label>
+                    <input class="input_formEmail" type="email" name="email" value="<?php if (!empty($_POST['email'])) {
+                        echo $_POST['email'];
+                    } ?>" placeholder="Ex: johndoe@gmail.com">
+                    <p class="error"><?php if (!empty($errors['email'])) {
+                            echo $errors['email'];
+                        } ?></p>
+                </div>
 
-            <div class="partIII">
-                <label for="message">Votre Message</label>
-                <textarea class="textarea_formContact" type="text" name="message" rows="8" cols="80" placeholder="Bonjour"><?php if(!empty($_POST['message'])) { echo $_POST['message']; } ?></textarea>
-                <p class="error"><?php if(!empty($errors['message'])) {echo $errors['message'];} ?></p>
-                <input class="submit_formContact" id="submit" type="submit" name="submit" value="Envoyer">
-            </div>
-        </form>
+                <div class="partIII">
+                    <label for="message">Votre Message</label>
+                    <textarea class="textarea_formContact" type="text" name="message" rows="8" cols="80"
+                              placeholder="Bonjour"><?php if (!empty($_POST['message'])) {
+                            echo $_POST['message'];
+                        } ?></textarea>
+                    <p class="error"><?php if (!empty($errors['message'])) {
+                            echo $errors['message'];
+                        } ?></p>
+                    <input class="submit_formContact" id="submit" type="submit" name="submit" value="Envoyer">
+                </div>
+            </form>
         <?php } ?>
-    </div>
-</section>
+
+    </section>
+</div>
 <div class="clear"></div>
 
 
