@@ -597,11 +597,10 @@ form#connexion.form.login{
 .bloc_foot{
     width: 25%;
     float: left;
-    padding: 5px 0;
-
+    padding: 5px 3px;
 }
 .logo3 {
-    width: 85px;
+    width: 50%;
     margin-left: 50%;
 }
 .forget a {
@@ -667,17 +666,13 @@ form.contact div {
     font-size: 0.6em;
     margin-top: 5px;
 }
-.mentions{
-    font-size: 0.6em;
-    margin-top: 25px;
-}
 .r_sociaux{
     width: 22%;
     float: left;
     margin: 15px 9px 0 0;
 }
 .footeur{
-    height: 95px;
+    height: 22%;
     background-color: #BFB9B9;
     margin-top: 22px;
 }
@@ -723,13 +718,10 @@ p.textintro{
     margin-bottom: 13px;
 }
 p.infos{
-    font-size: 1em;
+    font-size: 1.8vw;
 }
 p.mentions{
-    font-size: 0.8em;
-}
-.copyright{
-    font-size: 12px;
+    font-size: 1.8vw;
 }
 
 
