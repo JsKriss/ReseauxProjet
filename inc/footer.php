@@ -1,5 +1,5 @@
 <footer>
-    <div class="clear" ></divclass>
+    <div class="clear" ></div>
     <div class="footeur">
         <div class="wrap2">
             <div class="bloc_foot socialnetwork">
