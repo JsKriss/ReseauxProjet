@@ -11,14 +11,14 @@ $sql = "SELECT * FROM contact
 $query = $pdo->prepare($sql);
 $query->execute();
 $contacts = $query->fetchAll();
-//debug($users); ?>
+ ?>
 
 
 
     <div id="page-wrapper">
         <div id="page-inner">
             <div class="col-lg-6 col-md-6">
-                <h5>Liste des utilisateurs actifs</h5>
+                <h5>Messages envoyés via le formulaire de contact.</h5>
                 <div class="table-responsive">
                     <table class="table">
                         <thead>

@@ -17,7 +17,7 @@ $users = $query->fetchAll();
     <div id="page-wrapper">
         <div id="page-inner">
             <div class="col-lg-6 col-md-6">
-                <h5>Utilisateurs en attente d'approbation </h5>
+                <h5>Utilisateurs en attente d'approbation</h5>
                 <div class="table-responsive">
                     <table class="table">
                         <thead>
@@ -47,16 +47,7 @@ $users = $query->fetchAll();
                     </table>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>BLANK PAGE </h2>
-                </div>
-            </div>
-            <!-- /. ROW  -->
-            <hr/>
 
-            <!-- /. ROW  -->
-        </div>
         <!-- /. PAGE INNER  -->
     </div>
     <!-- /. PAGE WRAPPER  -->

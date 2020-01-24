@@ -20,7 +20,7 @@ $users = $query->fetchAll();
     <div id="page-wrapper">
         <div id="page-inner">
             <div class="col-lg-6 col-md-6">
-                <h5>Liste des utilisateurs actifs</h5>
+                <h5>Liste des utilisateurs</h5>
                 <div class="table-responsive">
                     <table class="table">
                         <thead>

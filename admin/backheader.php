@@ -46,7 +46,7 @@
                 <li>
                     <a href="approveUsers.php"><i class="fa fa-table "></i>Utilisateurs en attente d'approbation</a>
                 </li>
-                <li class="active-link">
+                <li>
                     <a href="trash.php"><i class="fa fa-edit "></i>Corbeille</a>
                 </li>
 

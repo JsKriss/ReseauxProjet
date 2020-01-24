@@ -38,10 +38,10 @@ if (!empty($_POST['submited'])) {
                 //die('test');
                 header('Location: index.php');
             } else {
-                $errors['login'] = 'Pseudo or email inconnu ou mot de passe oublié';
+                $errors['login'] = 'Identifiants incorrects';
             }
         } else {
-            $errors['login'] = 'Pseudo or email inconnu';
+            $errors['login'] = 'Identifiants incorrects';
         }
     }
 }
@@ -52,7 +52,7 @@ include('inc/header.php'); ?>
 
         <h1  class="register_title">Connexion</h1>
         <form id="connexion" class="form login" action="login.php" method="post">
-            <label for="login">Pseudo or email *</label>
+            <label for="login">Pseudo ou email *</label>
             <input class="globalForm" type="text" name="login" id="login" value="<?php if (!empty($_POST['login'])) {
                 echo $_POST['login'];
             } ?>">
