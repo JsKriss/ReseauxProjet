@@ -224,6 +224,7 @@ h3.job{
 h3{
     text-align: right;
     font-size: 4vw;
+    font-weight: bold;
 }
 /* --------------------------------- */
 /* ------- HEZAGONE -------*/
@@ -341,7 +342,7 @@ h3{
 .text1,.text2,.text3{
     padding: 5px 1px;
     text-align: center;
-    color: #59636d;
+    color: #FCFCFC;
     font-size: 2vw;
 }
 .tache{
