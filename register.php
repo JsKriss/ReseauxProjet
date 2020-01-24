@@ -71,7 +71,7 @@ if (!empty($_POST['submited'])) {
         $query->execute();
         $success = true;
         // redirection vers la connexion
-        // header('Location : login.php');
+         header('Location: login.php');
     }
 
 } //fermeture

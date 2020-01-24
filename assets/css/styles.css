@@ -758,7 +758,8 @@ form.contact label {
 }
 .footeur{
     height: 22%;
-    background-color: #BFB9B9;
+    /*background-color: #BFB9B9;*/
+    background-color: rgba(15,15,15,1);
     float: left;
     width: 100%;
 }
@@ -798,16 +799,24 @@ form.contact label {
 }
 img.r_sociaux{
     float: left;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 p.textintro{
     margin-bottom: 13px;
 }
 p.infos{
+    margin-top: 10px;
     font-size: 1.1vw;
+    color: white;
 }
 p.mentions{
+    margin-top: 35px;
     font-size: 1.1vw;
+    color: white;
+}
+p.mentions a {
+    text-decoration: none;
+    color: white;
 }
 #copyright {
     text-align: center;
@@ -817,7 +826,7 @@ p.mentions{
     margin-top: 33px;
 }
 .raisonsocial {
-    margin-top: 12px;
+    margin-top: 50px;
 }
 
 

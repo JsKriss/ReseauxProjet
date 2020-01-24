@@ -15,7 +15,7 @@
             </div>
 
             <div class="bloc_foot raisonsocial">
-                <p class="infos">NetScan</p>
+
                 <p class="infos">24 place Saint-Marc, 76000 ROUEN</p>
             </div>
 
